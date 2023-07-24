@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Data/QuartusPrimeWorkingDirectory/render3D/simulation/modelsim
+vcosine
+Z1 !s110 1655379757
+!i10b 1
+!s100 e3oI2D=cnln7GC7Jz?FVm0
+ImXcIn00QeGiMioKdF0BQ11
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653563980
+8C:/Data/QuartusPrimeWorkingDirectory/render3D/cosine.v
+FC:/Data/QuartusPrimeWorkingDirectory/render3D/cosine.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1655379757.000000
+!s107 C:/Data/QuartusPrimeWorkingDirectory/render3D/cosine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/QuartusPrimeWorkingDirectory/render3D|C:/Data/QuartusPrimeWorkingDirectory/render3D/cosine.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Data/QuartusPrimeWorkingDirectory/render3D
+Z7 tCvgOpt 0
+vmain
+R1
+!i10b 1
+!s100 zb]bMWT8J9QSo6K:Hl41:3
+IP=3kf7CPF9A@CLLKXz_Cm0
+R2
+R0
+w1655375983
+8C:/Data/QuartusPrimeWorkingDirectory/render3D/main.v
+FC:/Data/QuartusPrimeWorkingDirectory/render3D/main.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Data/QuartusPrimeWorkingDirectory/render3D/main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/QuartusPrimeWorkingDirectory/render3D|C:/Data/QuartusPrimeWorkingDirectory/render3D/main.v|
+!i113 1
+R5
+R6
+R7
+vsine
+R1
+!i10b 1
+!s100 <SGGO_LfVACKXLLE9clJC1
+I63bH1Nic>@9Zg1HTOhMBD2
+R2
+R0
+w1653563979
+8C:/Data/QuartusPrimeWorkingDirectory/render3D/sine.v
+FC:/Data/QuartusPrimeWorkingDirectory/render3D/sine.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Data/QuartusPrimeWorkingDirectory/render3D/sine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/QuartusPrimeWorkingDirectory/render3D|C:/Data/QuartusPrimeWorkingDirectory/render3D/sine.v|
+!i113 1
+R5
+R6
+R7
+vtest_main
+R1
+!i10b 1
+!s100 lbMF1:QFdjnmbn4VnMjXS3
+ICIP`Q>OIN@j;0@i=Ho8WS3
+R2
+R0
+w1654685984
+8C:/Data/QuartusPrimeWorkingDirectory/render3D/test_main.v
+FC:/Data/QuartusPrimeWorkingDirectory/render3D/test_main.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Data/QuartusPrimeWorkingDirectory/render3D/test_main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/QuartusPrimeWorkingDirectory/render3D|C:/Data/QuartusPrimeWorkingDirectory/render3D/test_main.v|
+!i113 1
+R5
+R6
+R7

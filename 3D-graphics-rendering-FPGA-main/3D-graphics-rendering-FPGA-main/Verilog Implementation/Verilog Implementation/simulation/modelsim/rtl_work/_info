@@ -1,0 +1,121 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/simulation/modelsim
+vcosine
+Z1 !s110 1654369385
+!i10b 1
+!s100 3E31hL^Da;3m71498OI7^2
+IGN880ATo7M^C6S2UeFHCK1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1651763912
+8C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v
+FC:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1654369385.000000
+!s107 C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation|C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation}
+Z8 tCvgOpt 0
+vmain
+Z9 !s110 1654369386
+!i10b 1
+!s100 zoj@E5WnLF4?_`aGm:cTF3
+IWaz[?@[hR;kB6A[L7Jf0D2
+R2
+R0
+w1652076306
+8C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v
+FC:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation|C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v|
+!i113 1
+R6
+R7
+R8
+vsine
+R1
+!i10b 1
+!s100 kf:@?=b8O7Y`hO@cXefS71
+IzAFRT=9JQblcV_Nab=``X2
+R2
+R0
+R3
+8C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v
+FC:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation|C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v|
+!i113 1
+R6
+R7
+R8
+vtest_main
+R9
+!i10b 1
+!s100 K2j<@niAAdD<ZV>:10dBT2
+IzQnS;_<oh:mWPg8z]QIF=3
+R2
+R0
+w1651770728
+8C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/test_main.v
+FC:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/test_main.v
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1654369386.000000
+!s107 C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/test_main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation|C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/test_main.v|
+!i113 1
+R6
+R7
+R8
+vVGA
+R1
+!i10b 1
+!s100 [EajDfYdbLck?gmZD7YTi2
+I1hzBbDFGUUYoi9HF`Q3Xa1
+R2
+R0
+R3
+8C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v
+FC:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation|C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v|
+!i113 1
+R6
+R7
+R8
+n@v@g@a

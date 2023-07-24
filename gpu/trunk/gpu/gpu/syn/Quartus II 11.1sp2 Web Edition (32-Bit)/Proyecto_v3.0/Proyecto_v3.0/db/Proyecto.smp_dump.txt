@@ -1,0 +1,117 @@
+
+State Machine - |main|Proyecto:u1|altera_merlin_burst_adapter:burst_adapter_002|altera_merlin_burst_adapter_full:altera_merlin_burst_adapter_full.the_ba|state
+Name state.ST_RD_BEGIN_SUBBURST state.ST_UNCRD_CONTINUE_SUBBURST state.ST_UNCST_RD_BEGIN_SUBBURST state.ST_WR_CONTINUE_SUBBURST state.ST_WR_BEGIN_SUBBURST state.ST_RESET state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 
+state.ST_RESET 0 0 0 0 0 1 1 
+state.ST_WR_BEGIN_SUBBURST 0 0 0 0 1 0 1 
+state.ST_WR_CONTINUE_SUBBURST 0 0 0 1 0 0 1 
+state.ST_UNCST_RD_BEGIN_SUBBURST 0 0 1 0 0 0 1 
+state.ST_UNCRD_CONTINUE_SUBBURST 0 1 0 0 0 0 1 
+state.ST_RD_BEGIN_SUBBURST 1 0 0 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|ps2:ps2_1|state
+Name state.host_to_device_2 state.host_to_device_1 state.host_to_device_0 state.device_to_host state.idle 
+state.idle 0 0 0 0 0 
+state.device_to_host 0 0 0 1 1 
+state.host_to_device_0 0 0 1 0 1 
+state.host_to_device_1 0 1 0 0 1 
+state.host_to_device_2 1 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|ps2:ps2_0|state
+Name state.host_to_device_2 state.host_to_device_1 state.host_to_device_0 state.device_to_host state.idle 
+state.idle 0 0 0 0 0 
+state.device_to_host 0 0 0 1 1 
+state.host_to_device_0 0 0 1 0 1 
+state.host_to_device_1 0 1 0 0 1 
+state.host_to_device_2 1 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sgdma_0:sgdma_0|Proyecto_sgdma_0_desc_address_fifo:the_Proyecto_sgdma_0_desc_address_fifo|scfifo:Proyecto_sgdma_0_desc_address_fifo_desc_address_fifo|a_fffifo:subfifo|a_fefifo:fifo_state|sm_emptyfull
+Name state_middle state_full state_empty 
+state_empty 0 0 0 
+state_middle 1 0 1 
+state_full 0 1 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sgdma_0:sgdma_0|Proyecto_sgdma_0_chain:the_Proyecto_sgdma_0_chain|descriptor_read_which_resides_within_Proyecto_sgdma_0:the_descriptor_read_which_resides_within_Proyecto_sgdma_0|descriptor_read_which_resides_within_Proyecto_sgdma_0_control_bits_fifo:the_descriptor_read_which_resides_within_Proyecto_sgdma_0_control_bits_fifo|scfifo:descriptor_read_which_resides_within_Proyecto_sgdma_0_control_bits_fifo_controlbitsfifo|a_fffifo:subfifo|a_fefifo:fifo_state|sm_emptyfull
+Name state_middle state_full state_empty 
+state_empty 0 0 0 
+state_middle 1 0 1 
+state_full 0 1 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_1|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_1|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_1|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_1|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_0|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_0|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_0|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_sdram_0:sdram_0|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |main|Proyecto:u1|Proyecto_nios2_qsys_0:nios2_qsys_0|Proyecto_nios2_qsys_0_nios2_oci:the_Proyecto_nios2_qsys_0_nios2_oci|Proyecto_nios2_qsys_0_jtag_debug_module_wrapper:the_Proyecto_nios2_qsys_0_jtag_debug_module_wrapper|Proyecto_nios2_qsys_0_jtag_debug_module_tck:the_Proyecto_nios2_qsys_0_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

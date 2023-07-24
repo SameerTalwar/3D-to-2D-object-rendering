@@ -1,0 +1,21 @@
+`include "main.v"
+
+
+module test_main();
+	reg clk;
+	reg [16-1:0] dx_coordinate; //change in x- coordinate
+	reg [16-1:0] dy_coordinate; //change in y- coordinate
+	reg [16-1:0] dz_coordinate; //change in z- coordinate
+
+	reg [16-1:0] alpha; //change in x-angle (in degrees)
+	reg [16-1:0] beta; //change in y-angle (in degrees)
+	reg [16-1:0] gamma; //change in z-angle (in degrees)
+	//output transformed
+	main uut (clk, dx_coordinate, dy_coordinate, dz_coordinate,
+				alpha, beta, gamma);
+	initial begin
+		clk = 0;
+		dx_coordinate = 0; dy_coordinate = 0; dz_coordinate = 0;
+		alpha = 0; beta = 0; gamma = 0;
+	end
+endmodule 

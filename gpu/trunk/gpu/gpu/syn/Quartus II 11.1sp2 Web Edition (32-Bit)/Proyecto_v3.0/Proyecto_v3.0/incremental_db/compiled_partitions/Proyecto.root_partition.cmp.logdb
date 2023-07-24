@@ -1,0 +1,8 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Proyecto:u1|Proyecto_nios2_qsys_0:nios2_qsys_0|Proyecto_nios2_qsys_0_mult_cell:the_Proyecto_nios2_qsys_0_mult_cell|altmult_add:the_altmult_add_part_1|mult_add_4cr2:auto_generated|ded_mult_2o81:ded_mult1|mac_out3,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Proyecto:u1|Proyecto_nios2_qsys_0:nios2_qsys_0|Proyecto_nios2_qsys_0_mult_cell:the_Proyecto_nios2_qsys_0_mult_cell|altmult_add:the_altmult_add_part_2|mult_add_6cr2:auto_generated|ded_mult_2o81:ded_mult1|mac_out3,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Proyecto:u1|gpu:gpu_0|core:u0|fmul:u4|mul:u0|lpm_mult:Mult0|mult_p8t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Proyecto:u1|gpu:gpu_0|core:u0|fmul:u4|mul:u0|lpm_mult:Mult0|mult_p8t:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Proyecto:u1|gpu:gpu_0|core:u0|fmul:u4|mul:u0|lpm_mult:Mult0|mult_p8t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,Proyecto:u1|gpu:gpu_0|core:u0|fmul:u4|mul:u0|lpm_mult:Mult0|mult_p8t:auto_generated|mac_out6,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,Proyecto:u1|gpu:gpu_0|core:u0|fmul:u4|mul:u0|lpm_mult:Mult0|mult_p8t:auto_generated|mac_mult5,

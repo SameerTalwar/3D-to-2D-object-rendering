@@ -1,0 +1,13 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="fpga-acceleration-of-canny-edge-detection-algorithm">FPGA Acceleration of Canny Edge Detection Algorithm</h1>
+<p>Canny Edge Detection Algorithm is a multi-stage algorithm to detect wide range of edges in images. It can be broken down in to the following steps:
+<em> Apply Gaussian filter to smooth the image in order to remove the noise
+</em> Find the intensity gradients of the image
+<em> Apply non-maximum suppression to get rid of spurious response to edge detection
+</em> Apply double threshold to determine potential edges
+* Track edge by hysteresis: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges. </p>
+<h3 id="directory-structure">Directory Structure</h3>
+<p>VHDL code for hardware implementation of algorithm is in the <strong>VHDL</strong> directory.<br />
+CPP code for software implementation of algorithm is in the <strong>CPP</strong> directory.<br />
+MATLAB scripts to convert image to text and vice versa is in the <strong>MATLAB</strong> directory.</p>
+</body></html>

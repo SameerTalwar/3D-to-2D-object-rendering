@@ -1,0 +1,30 @@
+Qflow DRC logfile created on Thu May 5 11:35:12 EDT 2022
+magic -dnull -noconsole  /home/osboxes/Qflow_2/layout/run_drc_CompBlock.tcl
+
+Magic 8.3 revision 153 - Compiled on Wed Apr  7 23:10:27 EDT 2021.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Input style lambda=0.20(p): scaleFactor=20, multiplier=1
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+Contact size value ignored (using GDS generation rules).
+4 Magic internal units = 1 Lambda
+Loading "/home/osboxes/Qflow_2/layout/run_drc_CompBlock.tcl" from command line.
+Reading LEF data from file /usr/local/share/qflow/tech/osu035/osu035_stdcells.lef.
+This action cannot be undone.
+LEF read, Line 16 (Message): Unknown keyword "OBS" in LEF file; ignoring.
+LEF read, Line 17 (Message): Unknown keyword "PIN" in LEF file; ignoring.
+LEF read: Processed 3179 lines.
+Scaled magic input cell CompBlock geometry by factor of 2
+CompBlock: 10000 rects
+CompBlock: 20000 rects
+CompBlock: 30000 rects
+CompBlock: 40000 rects
+Processing timestamp mismatches: FILL, OAI21X1, BUFX2, DFFPOSX1, INVX1, NAND2X1, NOR2X1, XNOR2X1, NAND3X1, AOI21X1, NOR3X1, XOR2X1, AND2X2, OR2X2, AOI22X1, OAI22X1.
+drc = 0
+DRC checking script ended on Thu May 5 11:35:14 EDT 2022

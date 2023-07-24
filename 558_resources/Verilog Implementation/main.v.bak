@@ -1,0 +1,149 @@
+`timescale 1ns/1ns
+`include "sine.v"
+`include "cosine.v"
+//`include "mul_2.v"
+//include "mul_3.v"
+
+module transformation_block 
+	//#(parameter n_faces = 2564, n_vertices = 1565) 
+	(	
+	input clk,
+	input [16-1:0] dx_coordinate, //change in x- coordinate
+	input [16-1:0] dy_coordinate, //change in y- coordinate
+	input [16-1:0] dz_coordinate, //change in z- coordinate
+
+	input [16-1:0] alpha, //change in x-angle (in degrees)
+	input [16-1:0] beta, //change in y-angle (in degrees)
+	input [16-1:0] gamma //change in z-angle (in degrees)
+	); 
+	
+//	
+//	//localparam integer n_faces = 2564, n_vertices = 1565 ;
+//	//reg [16-1:0] rom_vertices [n_vertices-1:0][3-1:0] ; // vertices - array of 3-element array (x,y,z cordinate of each vertex)
+//	reg signed [16-1:0] vertices [1565-1:0][3-1:0]; // vertices - array of 3-element array (x,y,z cordinate of each vertex)
+//	reg [16-1:0] faces [2564-1:0][3-1:0] ; // faces - array of 3 element array (3 vertices index for each triangle)
+//	
+//	 initial begin
+//	 $readmemh("vertices.hex",vertices);
+//	 $display("%d, %d, %d",vertices[0][0] ,vertices[0][1] ,vertices[0][2]);
+//	 $readmemh("faces.hex",faces);
+//	 end
+//	
+//	integer i;
+//	
+//	//linear transformation
+//	//always @(dx_coordinate,dy_coordinate,dz_coordinate, posedge clk) begin
+//	always@(posedge clk) begin
+//		//$display("Before displacement: %h %h %h %h",vertices[0][0], vertices[0][1], vertices[0][2], dx_coordinate);
+//		for(i=0; i<1565; i=i+1) begin
+//
+//			vertices[i][0] = vertices[i][0] + dx_coordinate;
+//			vertices[i][1] = vertices[i][1] + dy_coordinate;
+//			vertices[i][2] = vertices[i][2] + dz_coordinate;
+//
+//		end
+//		//$display("After displacement: %h %h %h %h",vertices[0][0], vertices[0][1], vertices[0][2], dx_coordinate);
+//	end
+//	
+//	//calculation of sine of angles:
+//	wire signed [15:0] sin_alpha, sin_beta, sin_gamma;
+//	sine s1 (alpha, sin_alpha);
+//	sine s2 (beta, sin_beta);
+//	sine s3 (gamma, sin_gamma);
+//
+//	//reg [15:0] cos_a = 16'b0;
+//	//assign cos_a = cos_alpha;
+//	
+//	//calculation of cosine of angles:
+//	wire signed [15:0] cos_alpha, cos_beta, cos_gamma;
+//	//initial cos_alpha = 16'b0;
+//	cosine c1 (alpha, cos_alpha);
+//	cosine c2 (beta, cos_beta);
+//	cosine c3 (gamma, cos_gamma);
+//	reg signed [15:0] vx1, vx2, vx3, vy1a, vy1b, vy1, vy2a, vy2b, vy2, vy3, vz1a, vz1b, vz1, vz2a, vz2b, vz2, vz3;
+//
+//	function signed [15:0] mul_3(input signed [15:0] inp_1, inp_2,inp_3);
+//		reg signed [47:0] product;
+//		begin
+//			product = inp_1 * inp_2 * inp_3;
+//			//$display("%d", product);
+//			mul_3 = product/10000;
+//			//$display("%d", mul_3);
+//		end
+//	endfunction
+//
+//	function signed [15:0] mul_2(input signed [15:0] inp_1, inp_2);
+//		reg signed [47:0] product;
+//		begin
+//			product = inp_1 * inp_2;
+//			//$display("%d", product);
+//			mul_2 = product/100;
+//			//$display("%d", mul_2);
+//		end
+//	endfunction
+//	
+//	//rotation using eulers angles
+//	//always @(cos_alpha, cos_beta, cos_gamma, sin_alpha, sin_beta, sin_gamma, posedge clk) begin
+//	always @(posedge clk) begin
+//
+//	$display(" Before rotation: %d %d %d",vertices[0][0], vertices[0][1], vertices[0][2]);
+//	
+//		for(i=0; i<1565; i=i+1) begin
+//			//vertice = np.dot(vertice,rot_matrix) 
+//
+//			//mul_3 m1 (vertices[i][0],cos_beta,cos_gamma, vx1);
+//			vx1 = mul_3 (vertices[i][0],cos_beta,cos_gamma);
+//			vx2 = mul_3 (vertices[i][1],cos_beta, sin_gamma);
+//			vx3 = mul_3 (vertices[i][2],-1,sin_beta);
+//			vertices[i][0] = vx1 + vx2 + vx3;
+//
+////			vertices[i][0] = (vertices[i][0] * cos_beta * cos_gamma)
+////					+ (vertices[i][1] * cos_beta * sin_gamma)
+////					+ (vertices[i][2] * -1 * sin_beta);
+//
+//			vy1a = mul_3 ( sin_alpha, sin_beta, cos_gamma);
+//			vy1b = mul_2 ( cos_alpha, sin_gamma);
+//			vy1 = mul_2 ( vertices[i][0], (vy1a - vy1b));
+//
+//			vy2a = mul_3 ( sin_alpha , sin_beta, sin_gamma);
+//			vy2b = mul_2 ( cos_alpha, cos_gamma);
+//			vy2 = mul_2 ( vertices[i][1], (vy2a - vy2b));
+//
+//			vy3 = mul_3 (vertices[i][2], sin_alpha, cos_beta);
+//
+//			vertices[i][1] = vy1 + vy2 + vy3;			
+//
+////			vertices[i][1] = (vertices[i][0] * (( sin_alpha * sin_beta * cos_gamma) - (cos_alpha * sin_gamma)))
+////					+ (vertices[i][1] * (( sin_alpha * sin_beta * sin_gamma) - (cos_alpha * cos_gamma)))
+////					+ (vertices[i][2] * sin_alpha * cos_beta);
+//
+//			vz1a = mul_3 ( cos_alpha, sin_beta, cos_gamma);
+//			vz1b = mul_2 ( sin_alpha, sin_gamma);
+//			vz1 = mul_2 ( vertices[i][0], (vz1a - vz1b));
+//
+//			vz2a = mul_3 ( cos_alpha , sin_beta, sin_gamma);
+//			vz2b = mul_2 ( sin_alpha, cos_gamma);
+//			vz2 = mul_2 ( vertices[i][1], (vz2a - vz2b));
+//
+//			vz3 = mul_3 (vertices[i][2], cos_alpha, cos_beta);
+//
+//			vertices[i][2] = vz1 + vz2 + vz3;	
+//	
+//					
+////			vertices[i][2] = (vertices[i][0] * (( cos_alpha * sin_beta * cos_gamma) - (sin_alpha * sin_gamma)))
+////					+ (vertices[i][1] * (( cos_alpha * sin_beta * sin_gamma) - (sin_alpha * cos_gamma)))
+////					+ (vertices[i][2] * cos_alpha * cos_beta);
+//			
+//		
+//		end
+//
+//	$display("After rotation: %d %d %d",vertices[0][0], vertices[0][1], vertices[0][2]);
+//
+//	end
+	
+endmodule
+
+
+
+
+

@@ -1,0 +1,196 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Web Edition
+# Date created = 19:26:55  September 12, 2013
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Proyecto_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C70F896C6
+set_global_assignment -name TOP_LEVEL_ENTITY main
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:26:55  SEPTEMBER 12, 2013"
+set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP2"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SDC_FILE Proyecto.sdc
+set_global_assignment -name QIP_FILE Proyecto/synthesis/Proyecto.qip
+set_global_assignment -name VHDL_FILE main.vhd
+set_global_assignment -name QIP_FILE pll.qip
+set_location_assignment PIN_AD15 -to CLK_50
+set_location_assignment PIN_T29 -to reset_reset_n
+set_location_assignment PIN_AF4 -to sdram_0_wire_addr[12]
+set_location_assignment PIN_AE4 -to sdram_0_wire_addr[11]
+set_location_assignment PIN_Y8 -to sdram_0_wire_addr[10]
+set_location_assignment PIN_AC7 -to sdram_0_wire_addr[9]
+set_location_assignment PIN_AD4 -to sdram_0_wire_addr[8]
+set_location_assignment PIN_AC6 -to sdram_0_wire_addr[7]
+set_location_assignment PIN_AC5 -to sdram_0_wire_addr[6]
+set_location_assignment PIN_AC4 -to sdram_0_wire_addr[5]
+set_location_assignment PIN_AB7 -to sdram_0_wire_addr[4]
+set_location_assignment PIN_AB5 -to sdram_0_wire_addr[3]
+set_location_assignment PIN_AA6 -to sdram_0_wire_addr[2]
+set_location_assignment PIN_AA5 -to sdram_0_wire_addr[1]
+set_location_assignment PIN_AA4 -to sdram_0_wire_addr[0]
+set_location_assignment PIN_AH2 -to sdram_0_wire_dq[15]
+set_location_assignment PIN_AH1 -to sdram_0_wire_dq[14]
+set_location_assignment PIN_AG3 -to sdram_0_wire_dq[13]
+set_location_assignment PIN_AG2 -to sdram_0_wire_dq[12]
+set_location_assignment PIN_AF3 -to sdram_0_wire_dq[11]
+set_location_assignment PIN_AF2 -to sdram_0_wire_dq[10]
+set_location_assignment PIN_AF1 -to sdram_0_wire_dq[9]
+set_location_assignment PIN_AE3 -to sdram_0_wire_dq[8]
+set_location_assignment PIN_AE2 -to sdram_0_wire_dq[7]
+set_location_assignment PIN_AE1 -to sdram_0_wire_dq[6]
+set_location_assignment PIN_AD3 -to sdram_0_wire_dq[5]
+set_location_assignment PIN_AD2 -to sdram_0_wire_dq[4]
+set_location_assignment PIN_AD1 -to sdram_0_wire_dq[3]
+set_location_assignment PIN_AC3 -to sdram_0_wire_dq[2]
+set_location_assignment PIN_AC2 -to sdram_0_wire_dq[1]
+set_location_assignment PIN_AC1 -to sdram_0_wire_dq[0]
+set_location_assignment PIN_AA10 -to sdram_0_wire_ba[1]
+set_location_assignment PIN_AA9 -to sdram_0_wire_ba[0]
+set_location_assignment PIN_AB6 -to sdram_0_wire_dqm[1]
+set_location_assignment PIN_V9 -to sdram_0_wire_dqm[0]
+set_location_assignment PIN_Y9 -to sdram_0_wire_ras_n
+set_location_assignment PIN_W10 -to sdram_0_wire_cas_n
+set_location_assignment PIN_AA8 -to sdram_0_wire_cke
+set_location_assignment PIN_AD6 -to DRAM0_CLK
+set_location_assignment PIN_W9 -to sdram_0_wire_we_n
+set_location_assignment PIN_Y10 -to sdram_0_wire_cs_n
+set_location_assignment PIN_B2 -to lcd_0_external_data[7]
+set_location_assignment PIN_C3 -to lcd_0_external_data[6]
+set_location_assignment PIN_C2 -to lcd_0_external_data[5]
+set_location_assignment PIN_C1 -to lcd_0_external_data[4]
+set_location_assignment PIN_D3 -to lcd_0_external_data[3]
+set_location_assignment PIN_D2 -to lcd_0_external_data[2]
+set_location_assignment PIN_E3 -to lcd_0_external_data[1]
+set_location_assignment PIN_E1 -to lcd_0_external_data[0]
+set_location_assignment PIN_F3 -to lcd_0_external_RW
+set_location_assignment PIN_E2 -to lcd_0_external_E
+set_location_assignment PIN_F2 -to lcd_0_external_RS
+set_location_assignment PIN_F1 -to LCD_ON
+set_location_assignment PIN_G3 -to LCD_BLON
+set_location_assignment PIN_F24 -to PS2_KBCLK
+set_location_assignment PIN_E24 -to PS2_KBDAT
+set_location_assignment PIN_D26 -to PS2_MSCLK
+set_location_assignment PIN_D25 -to PS2_MSDAT
+set_location_assignment PIN_Y7 -to sdram_1_wire_addr[12]
+set_location_assignment PIN_Y4 -to sdram_1_wire_addr[11]
+set_location_assignment PIN_T4 -to sdram_1_wire_addr[10]
+set_location_assignment PIN_W8 -to sdram_1_wire_addr[9]
+set_location_assignment PIN_W7 -to sdram_1_wire_addr[8]
+set_location_assignment PIN_W4 -to sdram_1_wire_addr[7]
+set_location_assignment PIN_V8 -to sdram_1_wire_addr[6]
+set_location_assignment PIN_V7 -to sdram_1_wire_addr[5]
+set_location_assignment PIN_U7 -to sdram_1_wire_addr[4]
+set_location_assignment PIN_U6 -to sdram_1_wire_addr[3]
+set_location_assignment PIN_U4 -to sdram_1_wire_addr[2]
+set_location_assignment PIN_T6 -to sdram_1_wire_addr[1]
+set_location_assignment PIN_T5 -to sdram_1_wire_addr[0]
+set_location_assignment PIN_AB2 -to sdram_1_wire_dq[15]
+set_location_assignment PIN_AB1 -to sdram_1_wire_dq[14]
+set_location_assignment PIN_AA3 -to sdram_1_wire_dq[13]
+set_location_assignment PIN_AA2 -to sdram_1_wire_dq[12]
+set_location_assignment PIN_AA1 -to sdram_1_wire_dq[11]
+set_location_assignment PIN_Y3 -to sdram_1_wire_dq[10]
+set_location_assignment PIN_Y2 -to sdram_1_wire_dq[9]
+set_location_assignment PIN_Y1 -to sdram_1_wire_dq[8]
+set_location_assignment PIN_W3 -to sdram_1_wire_dq[7]
+set_location_assignment PIN_W2 -to sdram_1_wire_dq[6]
+set_location_assignment PIN_W1 -to sdram_1_wire_dq[5]
+set_location_assignment PIN_V3 -to sdram_1_wire_dq[4]
+set_location_assignment PIN_V2 -to sdram_1_wire_dq[3]
+set_location_assignment PIN_U3 -to sdram_1_wire_dq[2]
+set_location_assignment PIN_U2 -to sdram_1_wire_dq[1]
+set_location_assignment PIN_U1 -to sdram_1_wire_dq[0]
+set_location_assignment PIN_T8 -to sdram_1_wire_ba[1]
+set_location_assignment PIN_T7 -to sdram_1_wire_ba[0]
+set_location_assignment PIN_U8 -to sdram_1_wire_dqm[1]
+set_location_assignment PIN_M10 -to sdram_1_wire_dqm[0]
+set_location_assignment PIN_N9 -to sdram_1_wire_ras_n
+set_location_assignment PIN_N8 -to sdram_1_wire_cas_n
+set_location_assignment PIN_L10 -to sdram_1_wire_cke
+set_location_assignment PIN_G5 -to DRAM1_CLK
+set_location_assignment PIN_M9 -to sdram_1_wire_we_n
+set_location_assignment PIN_P9 -to sdram_1_wire_cs_n
+set_location_assignment PIN_G20 -to video_sync_generator_0_sync_RGB_OUT[23]
+set_location_assignment PIN_E20 -to video_sync_generator_0_sync_RGB_OUT[22]
+set_location_assignment PIN_F20 -to video_sync_generator_0_sync_RGB_OUT[21]
+set_location_assignment PIN_H20 -to video_sync_generator_0_sync_RGB_OUT[20]
+set_location_assignment PIN_G21 -to video_sync_generator_0_sync_RGB_OUT[19]
+set_location_assignment PIN_H21 -to video_sync_generator_0_sync_RGB_OUT[18]
+set_location_assignment PIN_D22 -to video_sync_generator_0_sync_RGB_OUT[17]
+set_location_assignment PIN_E22 -to video_sync_generator_0_sync_RGB_OUT[16]
+set_location_assignment PIN_A14 -to video_sync_generator_0_sync_RGB_OUT[15]
+set_location_assignment PIN_B14 -to video_sync_generator_0_sync_RGB_OUT[14]
+set_location_assignment PIN_B13 -to video_sync_generator_0_sync_RGB_OUT[13]
+set_location_assignment PIN_C13 -to video_sync_generator_0_sync_RGB_OUT[12]
+set_location_assignment PIN_A12 -to video_sync_generator_0_sync_RGB_OUT[11]
+set_location_assignment PIN_B12 -to video_sync_generator_0_sync_RGB_OUT[10]
+set_location_assignment PIN_C12 -to video_sync_generator_0_sync_RGB_OUT[9]
+set_location_assignment PIN_A11 -to video_sync_generator_0_sync_RGB_OUT[8]
+set_location_assignment PIN_D19 -to video_sync_generator_0_sync_RGB_OUT[7]
+set_location_assignment PIN_C19 -to video_sync_generator_0_sync_RGB_OUT[6]
+set_location_assignment PIN_A19 -to video_sync_generator_0_sync_RGB_OUT[5]
+set_location_assignment PIN_B19 -to video_sync_generator_0_sync_RGB_OUT[4]
+set_location_assignment PIN_B18 -to video_sync_generator_0_sync_RGB_OUT[3]
+set_location_assignment PIN_C18 -to video_sync_generator_0_sync_RGB_OUT[2]
+set_location_assignment PIN_B17 -to video_sync_generator_0_sync_RGB_OUT[1]
+set_location_assignment PIN_A17 -to video_sync_generator_0_sync_RGB_OUT[0]
+set_location_assignment PIN_E23 -to VGA_R[1]
+set_location_assignment PIN_D23 -to VGA_R[0]
+set_location_assignment PIN_B11 -to VGA_G[1]
+set_location_assignment PIN_A10 -to VGA_G[0]
+set_location_assignment PIN_C16 -to VGA_B[1]
+set_location_assignment PIN_B16 -to VGA_B[0]
+set_location_assignment PIN_D24 -to VGA_CLK
+set_location_assignment PIN_C15 -to video_sync_generator_0_sync_DEN
+set_location_assignment PIN_J19 -to video_sync_generator_0_sync_HD
+set_location_assignment PIN_H19 -to video_sync_generator_0_sync_VD
+set_location_assignment PIN_B15 -to VGA_SYNC
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

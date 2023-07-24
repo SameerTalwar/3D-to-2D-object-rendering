@@ -1,0 +1,681 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "D",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Q",
+        "CLK",
+        "D",
+        "gnd",
+        "vdd"
+      ], [
+        "Q",
+        "CLK",
+        "D",
+        "gnd",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "CompBlock",
+      "CompBlock"
+   ],
+   "devices": [
+       [
+         ["OAI21X1", 518],
+         ["AND2X2", 110],
+         ["INVX1", 386],
+         ["NAND2X1", 546],
+         ["AOI21X1", 266],
+         ["AOI22X1", 60],
+         ["NAND3X1", 548],
+         ["OAI22X1", 13],
+         ["OR2X2", 59],
+         ["XNOR2X1", 84],
+         ["XOR2X1", 52],
+         ["NOR3X1", 52],
+         ["NOR2X1", 200],
+         ["BUFX2", 33],
+         ["DFFPOSX1", 16 ]
+       ], [
+         ["OAI21X1", 518 ],
+         ["AND2X2", 110 ],
+         ["INVX1", 386 ],
+         ["NAND2X1", 546 ],
+         ["AOI21X1", 266 ],
+         ["AOI22X1", 60 ],
+         ["NAND3X1", 548 ],
+         ["OAI22X1", 13 ],
+         ["OR2X2", 59 ],
+         ["XNOR2X1", 84 ],
+         ["XOR2X1", 52 ],
+         ["NOR3X1", 52 ],
+         ["NOR2X1", 200 ],
+         ["BUFX2", 33 ],
+         ["DFFPOSX1", 16 ]
+       ]
+   ],
+   "nets": [
+    3042,
+    3042
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "clk",
+        "dz[2]",
+        "dz[3]",
+        "dz[4]",
+        "dz[5]",
+        "dz[6]",
+        "dz[8]",
+        "dz[7]",
+        "dz[9]",
+        "dz[10]",
+        "dz[11]",
+        "dz[12]",
+        "dz[13]",
+        "dz[14]",
+        "cos_gamma[15]",
+        "dz[15]",
+        "dy[15]",
+        "dx[15]",
+        "vertices[15]",
+        "vertices_out[1]",
+        "vertices_out[0]",
+        "vertices_out[2]",
+        "vertices_out[3]",
+        "vertices_out[4]",
+        "vertices_out[5]",
+        "vertices_out[7]",
+        "vertices_out[6]",
+        "vertices_out[8]",
+        "vertices_out[10]",
+        "vertices_out[9]",
+        "vertices_out[11]",
+        "vertices_out[13]",
+        "vertices_out[14]",
+        "vertices_out[12]",
+        "vertices_out[15]",
+        "vertices[9]",
+        "cos_alpha[6]",
+        "vertices[8]",
+        "cos_gamma[2]",
+        "cos_gamma[4]",
+        "cos_alpha[7]",
+        "vertices[3]",
+        "vertices[4]",
+        "vertices[6]",
+        "cos_gamma[3]",
+        "cos_alpha[3]",
+        "cos_alpha[4]",
+        "vertices[2]",
+        "vertices[5]",
+        "cos_gamma[5]",
+        "cos_alpha[5]",
+        "cos_alpha[8]",
+        "cos_gamma[9]",
+        "cos_gamma[0]",
+        "cos_gamma[7]",
+        "vertices[10]",
+        "cos_gamma[11]",
+        "vertices[12]",
+        "cos_gamma[1]",
+        "vertices[1]",
+        "vertices[7]",
+        "vertices[0]",
+        "cos_gamma[6]",
+        "cos_alpha[9]",
+        "cos_alpha[10]",
+        "vertices[11]",
+        "dx[0]",
+        "dx[1]",
+        "dy[0]",
+        "dy[1]",
+        "dz[0]",
+        "dz[1]",
+        "cos_gamma[13]",
+        "cos_gamma[14]",
+        "cos_alpha[14]",
+        "vertices[14]",
+        "dx[2]",
+        "dx[3]",
+        "dx[5]",
+        "dx[4]",
+        "dx[10]",
+        "dx[9]",
+        "dx[12]",
+        "dx[6]",
+        "dx[13]",
+        "dx[7]",
+        "dx[8]",
+        "dx[11]",
+        "dx[14]",
+        "dy[2]",
+        "dy[3]",
+        "dy[5]",
+        "dy[4]",
+        "dy[10]",
+        "dy[9]",
+        "dy[12]",
+        "dy[6]",
+        "dy[13]",
+        "dy[7]",
+        "dy[8]",
+        "dy[11]",
+        "dy[14]",
+        "cos_alpha[15]",
+        "cos_gamma[10]",
+        "cos_alpha[12]",
+        "cos_alpha[13]",
+        "vertices[13]",
+        "cos_alpha[2]",
+        "cos_alpha[1]",
+        "cos_alpha[0]",
+        "cos_gamma[8]",
+        "cos_alpha[11]",
+        "cos_gamma[12]",
+        "vdd",
+        "gnd",
+        "sin_alpha[0]",
+        "sin_alpha[1]",
+        "sin_alpha[2]",
+        "sin_alpha[3]",
+        "sin_alpha[4]",
+        "sin_alpha[5]",
+        "sin_alpha[6]",
+        "sin_alpha[7]",
+        "sin_alpha[8]",
+        "sin_alpha[9]",
+        "sin_alpha[10]",
+        "sin_alpha[11]",
+        "sin_alpha[12]",
+        "sin_alpha[13]",
+        "sin_alpha[14]",
+        "sin_alpha[15]",
+        "cos_beta[0]",
+        "cos_beta[1]",
+        "cos_beta[2]",
+        "cos_beta[3]",
+        "cos_beta[4]",
+        "cos_beta[5]",
+        "cos_beta[6]",
+        "cos_beta[7]",
+        "cos_beta[8]",
+        "cos_beta[9]",
+        "cos_beta[10]",
+        "cos_beta[11]",
+        "cos_beta[12]",
+        "cos_beta[13]",
+        "cos_beta[14]",
+        "cos_beta[15]",
+        "sin_beta[0]",
+        "sin_beta[1]",
+        "sin_beta[2]",
+        "sin_beta[3]",
+        "sin_beta[4]",
+        "sin_beta[5]",
+        "sin_beta[6]",
+        "sin_beta[7]",
+        "sin_beta[8]",
+        "sin_beta[9]",
+        "sin_beta[10]",
+        "sin_beta[11]",
+        "sin_beta[12]",
+        "sin_beta[13]",
+        "sin_beta[14]",
+        "sin_beta[15]",
+        "sin_gamma[0]",
+        "sin_gamma[1]",
+        "sin_gamma[2]",
+        "sin_gamma[3]",
+        "sin_gamma[4]",
+        "sin_gamma[5]",
+        "sin_gamma[6]",
+        "sin_gamma[7]",
+        "sin_gamma[8]",
+        "sin_gamma[9]",
+        "sin_gamma[10]",
+        "sin_gamma[11]",
+        "sin_gamma[12]",
+        "sin_gamma[13]",
+        "sin_gamma[14]",
+        "sin_gamma[15]"
+      ], [
+        "clk",
+        "dz[2]",
+        "dz[3]",
+        "dz[4]",
+        "dz[5]",
+        "dz[6]",
+        "dz[8]",
+        "dz[7]",
+        "dz[9]",
+        "dz[10]",
+        "dz[11]",
+        "dz[12]",
+        "dz[13]",
+        "dz[14]",
+        "cos_gamma[15]",
+        "dz[15]",
+        "dy[15]",
+        "dx[15]",
+        "vertices[15]",
+        "vertices_out[1]",
+        "vertices_out[0]",
+        "vertices_out[2]",
+        "vertices_out[3]",
+        "vertices_out[4]",
+        "vertices_out[5]",
+        "vertices_out[7]",
+        "vertices_out[6]",
+        "vertices_out[8]",
+        "vertices_out[10]",
+        "vertices_out[9]",
+        "vertices_out[11]",
+        "vertices_out[13]",
+        "vertices_out[14]",
+        "vertices_out[12]",
+        "vertices_out[15]",
+        "vertices[9]",
+        "cos_alpha[6]",
+        "vertices[8]",
+        "cos_gamma[2]",
+        "cos_gamma[4]",
+        "cos_alpha[7]",
+        "vertices[3]",
+        "vertices[4]",
+        "vertices[6]",
+        "cos_gamma[3]",
+        "cos_alpha[3]",
+        "cos_alpha[4]",
+        "vertices[2]",
+        "vertices[5]",
+        "cos_gamma[5]",
+        "cos_alpha[5]",
+        "cos_alpha[8]",
+        "cos_gamma[9]",
+        "cos_gamma[0]",
+        "cos_gamma[7]",
+        "vertices[10]",
+        "cos_gamma[11]",
+        "vertices[12]",
+        "cos_gamma[1]",
+        "vertices[1]",
+        "vertices[7]",
+        "vertices[0]",
+        "cos_gamma[6]",
+        "cos_alpha[9]",
+        "cos_alpha[10]",
+        "vertices[11]",
+        "dx[0]",
+        "dx[1]",
+        "dy[0]",
+        "dy[1]",
+        "dz[0]",
+        "dz[1]",
+        "cos_gamma[13]",
+        "cos_gamma[14]",
+        "cos_alpha[14]",
+        "vertices[14]",
+        "dx[2]",
+        "dx[3]",
+        "dx[5]",
+        "dx[4]",
+        "dx[10]",
+        "dx[9]",
+        "dx[12]",
+        "dx[6]",
+        "dx[13]",
+        "dx[7]",
+        "dx[8]",
+        "dx[11]",
+        "dx[14]",
+        "dy[2]",
+        "dy[3]",
+        "dy[5]",
+        "dy[4]",
+        "dy[10]",
+        "dy[9]",
+        "dy[12]",
+        "dy[6]",
+        "dy[13]",
+        "dy[7]",
+        "dy[8]",
+        "dy[11]",
+        "dy[14]",
+        "cos_alpha[15]",
+        "cos_gamma[10]",
+        "cos_alpha[12]",
+        "cos_alpha[13]",
+        "vertices[13]",
+        "cos_alpha[2]",
+        "cos_alpha[1]",
+        "cos_alpha[0]",
+        "cos_gamma[8]",
+        "cos_alpha[11]",
+        "cos_gamma[12]",
+        "vdd",
+        "gnd",
+        "sin_alpha[0]",
+        "sin_alpha[1]",
+        "sin_alpha[2]",
+        "sin_alpha[3]",
+        "sin_alpha[4]",
+        "sin_alpha[5]",
+        "sin_alpha[6]",
+        "sin_alpha[7]",
+        "sin_alpha[8]",
+        "sin_alpha[9]",
+        "sin_alpha[10]",
+        "sin_alpha[11]",
+        "sin_alpha[12]",
+        "sin_alpha[13]",
+        "sin_alpha[14]",
+        "sin_alpha[15]",
+        "cos_beta[0]",
+        "cos_beta[1]",
+        "cos_beta[2]",
+        "cos_beta[3]",
+        "cos_beta[4]",
+        "cos_beta[5]",
+        "cos_beta[6]",
+        "cos_beta[7]",
+        "cos_beta[8]",
+        "cos_beta[9]",
+        "cos_beta[10]",
+        "cos_beta[11]",
+        "cos_beta[12]",
+        "cos_beta[13]",
+        "cos_beta[14]",
+        "cos_beta[15]",
+        "sin_beta[0]",
+        "sin_beta[1]",
+        "sin_beta[2]",
+        "sin_beta[3]",
+        "sin_beta[4]",
+        "sin_beta[5]",
+        "sin_beta[6]",
+        "sin_beta[7]",
+        "sin_beta[8]",
+        "sin_beta[9]",
+        "sin_beta[10]",
+        "sin_beta[11]",
+        "sin_beta[12]",
+        "sin_beta[13]",
+        "sin_beta[14]",
+        "sin_beta[15]",
+        "sin_gamma[0]",
+        "sin_gamma[1]",
+        "sin_gamma[2]",
+        "sin_gamma[3]",
+        "sin_gamma[4]",
+        "sin_gamma[5]",
+        "sin_gamma[6]",
+        "sin_gamma[7]",
+        "sin_gamma[8]",
+        "sin_gamma[9]",
+        "sin_gamma[10]",
+        "sin_gamma[11]",
+        "sin_gamma[12]",
+        "sin_gamma[13]",
+        "sin_gamma[14]",
+        "sin_gamma[15]"
+      ]
+   ]
+  }
+]

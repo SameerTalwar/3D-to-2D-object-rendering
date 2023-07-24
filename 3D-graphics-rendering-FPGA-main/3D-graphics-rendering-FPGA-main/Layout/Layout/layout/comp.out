@@ -1,0 +1,623 @@
+
+Cell BUFX2 disconnected node: A
+Cell BUFX2 disconnected node: gnd
+Cell BUFX2 disconnected node: Y
+Cell BUFX2 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: BUFX2                           |Circuit 2: BUFX2                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BUFX2 and BUFX2 are equivalent.
+
+Cell INVX1 disconnected node: A
+Cell INVX1 disconnected node: gnd
+Cell INVX1 disconnected node: Y
+Cell INVX1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: INVX1                           |Circuit 2: INVX1                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes INVX1 and INVX1 are equivalent.
+
+Cell NOR2X1 disconnected node: A
+Cell NOR2X1 disconnected node: B
+Cell NOR2X1 disconnected node: gnd
+Cell NOR2X1 disconnected node: Y
+Cell NOR2X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: NOR2X1                          |Circuit 2: NOR2X1                          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NOR2X1 and NOR2X1 are equivalent.
+
+Cell NAND2X1 disconnected node: A
+Cell NAND2X1 disconnected node: B
+Cell NAND2X1 disconnected node: gnd
+Cell NAND2X1 disconnected node: Y
+Cell NAND2X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: NAND2X1                         |Circuit 2: NAND2X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND2X1 and NAND2X1 are equivalent.
+
+Cell OR2X2 disconnected node: A
+Cell OR2X2 disconnected node: B
+Cell OR2X2 disconnected node: gnd
+Cell OR2X2 disconnected node: Y
+Cell OR2X2 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: OR2X2                           |Circuit 2: OR2X2                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OR2X2 and OR2X2 are equivalent.
+
+Cell AND2X2 disconnected node: A
+Cell AND2X2 disconnected node: B
+Cell AND2X2 disconnected node: gnd
+Cell AND2X2 disconnected node: Y
+Cell AND2X2 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: AND2X2                          |Circuit 2: AND2X2                          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes AND2X2 and AND2X2 are equivalent.
+
+Cell OAI21X1 disconnected node: A
+Cell OAI21X1 disconnected node: B
+Cell OAI21X1 disconnected node: C
+Cell OAI21X1 disconnected node: gnd
+Cell OAI21X1 disconnected node: Y
+Cell OAI21X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: OAI21X1                         |Circuit 2: OAI21X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OAI21X1 and OAI21X1 are equivalent.
+
+Cell OAI22X1 disconnected node: A
+Cell OAI22X1 disconnected node: B
+Cell OAI22X1 disconnected node: C
+Cell OAI22X1 disconnected node: D
+Cell OAI22X1 disconnected node: gnd
+Cell OAI22X1 disconnected node: Y
+Cell OAI22X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: OAI22X1                         |Circuit 2: OAI22X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+D                                          |D                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OAI22X1 and OAI22X1 are equivalent.
+
+Cell XNOR2X1 disconnected node: A
+Cell XNOR2X1 disconnected node: B
+Cell XNOR2X1 disconnected node: gnd
+Cell XNOR2X1 disconnected node: Y
+Cell XNOR2X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: XNOR2X1                         |Circuit 2: XNOR2X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes XNOR2X1 and XNOR2X1 are equivalent.
+
+Cell NAND3X1 disconnected node: A
+Cell NAND3X1 disconnected node: B
+Cell NAND3X1 disconnected node: C
+Cell NAND3X1 disconnected node: gnd
+Cell NAND3X1 disconnected node: Y
+Cell NAND3X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: NAND3X1                         |Circuit 2: NAND3X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NAND3X1 and NAND3X1 are equivalent.
+
+Cell XOR2X1 disconnected node: A
+Cell XOR2X1 disconnected node: B
+Cell XOR2X1 disconnected node: gnd
+Cell XOR2X1 disconnected node: Y
+Cell XOR2X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: XOR2X1                          |Circuit 2: XOR2X1                          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes XOR2X1 and XOR2X1 are equivalent.
+
+Cell AOI21X1 disconnected node: A
+Cell AOI21X1 disconnected node: B
+Cell AOI21X1 disconnected node: C
+Cell AOI21X1 disconnected node: gnd
+Cell AOI21X1 disconnected node: Y
+Cell AOI21X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: AOI21X1                         |Circuit 2: AOI21X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes AOI21X1 and AOI21X1 are equivalent.
+
+Cell AOI22X1 disconnected node: A
+Cell AOI22X1 disconnected node: B
+Cell AOI22X1 disconnected node: C
+Cell AOI22X1 disconnected node: D
+Cell AOI22X1 disconnected node: gnd
+Cell AOI22X1 disconnected node: Y
+Cell AOI22X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: AOI22X1                         |Circuit 2: AOI22X1                         
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+D                                          |D                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes AOI22X1 and AOI22X1 are equivalent.
+
+Cell NOR3X1 disconnected node: A
+Cell NOR3X1 disconnected node: B
+Cell NOR3X1 disconnected node: C
+Cell NOR3X1 disconnected node: gnd
+Cell NOR3X1 disconnected node: Y
+Cell NOR3X1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: NOR3X1                          |Circuit 2: NOR3X1                          
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+C                                          |C                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes NOR3X1 and NOR3X1 are equivalent.
+
+Cell DFFPOSX1 disconnected node: Q
+Cell DFFPOSX1 disconnected node: CLK
+Cell DFFPOSX1 disconnected node: D
+Cell DFFPOSX1 disconnected node: gnd
+Cell DFFPOSX1 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: DFFPOSX1                        |Circuit 2: DFFPOSX1                        
+-------------------------------------------|-------------------------------------------
+Q                                          |Q                                          
+CLK                                        |CLK                                        
+D                                          |D                                          
+gnd                                        |gnd                                        
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DFFPOSX1 and DFFPOSX1 are equivalent.
+
+Cell CompBlock disconnected node: sin_alpha[0]
+Cell CompBlock disconnected node: sin_alpha[1]
+Cell CompBlock disconnected node: sin_alpha[2]
+Cell CompBlock disconnected node: sin_alpha[3]
+Cell CompBlock disconnected node: sin_alpha[4]
+Cell CompBlock disconnected node: sin_alpha[5]
+Cell CompBlock disconnected node: sin_alpha[6]
+Cell CompBlock disconnected node: sin_alpha[7]
+Cell CompBlock disconnected node: sin_alpha[8]
+Cell CompBlock disconnected node: sin_alpha[9]
+Cell CompBlock disconnected node: sin_alpha[10]
+Cell CompBlock disconnected node: sin_alpha[11]
+Cell CompBlock disconnected node: sin_alpha[12]
+Cell CompBlock disconnected node: sin_alpha[13]
+Cell CompBlock disconnected node: sin_alpha[14]
+Cell CompBlock disconnected node: sin_alpha[15]
+Cell CompBlock disconnected node: cos_beta[0]
+Cell CompBlock disconnected node: cos_beta[1]
+Cell CompBlock disconnected node: cos_beta[2]
+Cell CompBlock disconnected node: cos_beta[3]
+Cell CompBlock disconnected node: cos_beta[4]
+Cell CompBlock disconnected node: cos_beta[5]
+Cell CompBlock disconnected node: cos_beta[6]
+Cell CompBlock disconnected node: cos_beta[7]
+Cell CompBlock disconnected node: cos_beta[8]
+Cell CompBlock disconnected node: cos_beta[9]
+Cell CompBlock disconnected node: cos_beta[10]
+Cell CompBlock disconnected node: cos_beta[11]
+Cell CompBlock disconnected node: cos_beta[12]
+Cell CompBlock disconnected node: cos_beta[13]
+Cell CompBlock disconnected node: cos_beta[14]
+Cell CompBlock disconnected node: cos_beta[15]
+Cell CompBlock disconnected node: sin_beta[0]
+Cell CompBlock disconnected node: sin_beta[1]
+Cell CompBlock disconnected node: sin_beta[2]
+Cell CompBlock disconnected node: sin_beta[3]
+Cell CompBlock disconnected node: sin_beta[4]
+Cell CompBlock disconnected node: sin_beta[5]
+Cell CompBlock disconnected node: sin_beta[6]
+Cell CompBlock disconnected node: sin_beta[7]
+Cell CompBlock disconnected node: sin_beta[8]
+Cell CompBlock disconnected node: sin_beta[9]
+Cell CompBlock disconnected node: sin_beta[10]
+Cell CompBlock disconnected node: sin_beta[11]
+Cell CompBlock disconnected node: sin_beta[12]
+Cell CompBlock disconnected node: sin_beta[13]
+Cell CompBlock disconnected node: sin_beta[14]
+Cell CompBlock disconnected node: sin_beta[15]
+Cell CompBlock disconnected node: sin_gamma[0]
+Cell CompBlock disconnected node: sin_gamma[1]
+Cell CompBlock disconnected node: sin_gamma[2]
+Cell CompBlock disconnected node: sin_gamma[3]
+Cell CompBlock disconnected node: sin_gamma[4]
+Cell CompBlock disconnected node: sin_gamma[5]
+Cell CompBlock disconnected node: sin_gamma[6]
+Cell CompBlock disconnected node: sin_gamma[7]
+Cell CompBlock disconnected node: sin_gamma[8]
+Cell CompBlock disconnected node: sin_gamma[9]
+Cell CompBlock disconnected node: sin_gamma[10]
+Cell CompBlock disconnected node: sin_gamma[11]
+Cell CompBlock disconnected node: sin_gamma[12]
+Cell CompBlock disconnected node: sin_gamma[13]
+Cell CompBlock disconnected node: sin_gamma[14]
+Cell CompBlock disconnected node: sin_gamma[15]
+
+Cell CompBlock disconnected node: sin_alpha[0]
+Cell CompBlock disconnected node: sin_alpha[1]
+Cell CompBlock disconnected node: sin_alpha[2]
+Cell CompBlock disconnected node: sin_alpha[3]
+Cell CompBlock disconnected node: sin_alpha[4]
+Cell CompBlock disconnected node: sin_alpha[5]
+Cell CompBlock disconnected node: sin_alpha[6]
+Cell CompBlock disconnected node: sin_alpha[7]
+Cell CompBlock disconnected node: sin_alpha[8]
+Cell CompBlock disconnected node: sin_alpha[9]
+Cell CompBlock disconnected node: sin_alpha[10]
+Cell CompBlock disconnected node: sin_alpha[11]
+Cell CompBlock disconnected node: sin_alpha[12]
+Cell CompBlock disconnected node: sin_alpha[13]
+Cell CompBlock disconnected node: sin_alpha[14]
+Cell CompBlock disconnected node: sin_alpha[15]
+Cell CompBlock disconnected node: cos_beta[0]
+Cell CompBlock disconnected node: cos_beta[1]
+Cell CompBlock disconnected node: cos_beta[2]
+Cell CompBlock disconnected node: cos_beta[3]
+Cell CompBlock disconnected node: cos_beta[4]
+Cell CompBlock disconnected node: cos_beta[5]
+Cell CompBlock disconnected node: cos_beta[6]
+Cell CompBlock disconnected node: cos_beta[7]
+Cell CompBlock disconnected node: cos_beta[8]
+Cell CompBlock disconnected node: cos_beta[9]
+Cell CompBlock disconnected node: cos_beta[10]
+Cell CompBlock disconnected node: cos_beta[11]
+Cell CompBlock disconnected node: cos_beta[12]
+Cell CompBlock disconnected node: cos_beta[13]
+Cell CompBlock disconnected node: cos_beta[14]
+Cell CompBlock disconnected node: cos_beta[15]
+Cell CompBlock disconnected node: sin_beta[0]
+Cell CompBlock disconnected node: sin_beta[1]
+Cell CompBlock disconnected node: sin_beta[2]
+Cell CompBlock disconnected node: sin_beta[3]
+Cell CompBlock disconnected node: sin_beta[4]
+Cell CompBlock disconnected node: sin_beta[5]
+Cell CompBlock disconnected node: sin_beta[6]
+Cell CompBlock disconnected node: sin_beta[7]
+Cell CompBlock disconnected node: sin_beta[8]
+Cell CompBlock disconnected node: sin_beta[9]
+Cell CompBlock disconnected node: sin_beta[10]
+Cell CompBlock disconnected node: sin_beta[11]
+Cell CompBlock disconnected node: sin_beta[12]
+Cell CompBlock disconnected node: sin_beta[13]
+Cell CompBlock disconnected node: sin_beta[14]
+Cell CompBlock disconnected node: sin_beta[15]
+Cell CompBlock disconnected node: sin_gamma[0]
+Cell CompBlock disconnected node: sin_gamma[1]
+Cell CompBlock disconnected node: sin_gamma[2]
+Cell CompBlock disconnected node: sin_gamma[3]
+Cell CompBlock disconnected node: sin_gamma[4]
+Cell CompBlock disconnected node: sin_gamma[5]
+Cell CompBlock disconnected node: sin_gamma[6]
+Cell CompBlock disconnected node: sin_gamma[7]
+Cell CompBlock disconnected node: sin_gamma[8]
+Cell CompBlock disconnected node: sin_gamma[9]
+Cell CompBlock disconnected node: sin_gamma[10]
+Cell CompBlock disconnected node: sin_gamma[11]
+Cell CompBlock disconnected node: sin_gamma[12]
+Cell CompBlock disconnected node: sin_gamma[13]
+Cell CompBlock disconnected node: sin_gamma[14]
+Cell CompBlock disconnected node: sin_gamma[15]
+
+Subcircuit summary:
+Circuit 1: CompBlock                       |Circuit 2: CompBlock                       
+-------------------------------------------|-------------------------------------------
+OAI21X1 (518)                              |OAI21X1 (518)                              
+AND2X2 (110)                               |AND2X2 (110)                               
+INVX1 (386)                                |INVX1 (386)                                
+NAND2X1 (546)                              |NAND2X1 (546)                              
+AOI21X1 (266)                              |AOI21X1 (266)                              
+AOI22X1 (60)                               |AOI22X1 (60)                               
+NAND3X1 (548)                              |NAND3X1 (548)                              
+OAI22X1 (13)                               |OAI22X1 (13)                               
+OR2X2 (59)                                 |OR2X2 (59)                                 
+XNOR2X1 (84)                               |XNOR2X1 (84)                               
+XOR2X1 (52)                                |XOR2X1 (52)                                
+NOR3X1 (52)                                |NOR3X1 (52)                                
+NOR2X1 (200)                               |NOR2X1 (200)                               
+BUFX2 (33)                                 |BUFX2 (33)                                 
+DFFPOSX1 (16)                              |DFFPOSX1 (16)                              
+Number of devices: 2943                    |Number of devices: 2943                    
+Number of nets: 3042                       |Number of nets: 3042                       
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: CompBlock                       |Circuit 2: CompBlock                       
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+dz[2]                                      |dz[2]                                      
+dz[3]                                      |dz[3]                                      
+dz[4]                                      |dz[4]                                      
+dz[5]                                      |dz[5]                                      
+dz[6]                                      |dz[6]                                      
+dz[8]                                      |dz[8]                                      
+dz[7]                                      |dz[7]                                      
+dz[9]                                      |dz[9]                                      
+dz[10]                                     |dz[10]                                     
+dz[11]                                     |dz[11]                                     
+dz[12]                                     |dz[12]                                     
+dz[13]                                     |dz[13]                                     
+dz[14]                                     |dz[14]                                     
+cos_gamma[15]                              |cos_gamma[15]                              
+dz[15]                                     |dz[15]                                     
+dy[15]                                     |dy[15]                                     
+dx[15]                                     |dx[15]                                     
+vertices[15]                               |vertices[15]                               
+vertices_out[1]                            |vertices_out[1]                            
+vertices_out[0]                            |vertices_out[0]                            
+vertices_out[2]                            |vertices_out[2]                            
+vertices_out[3]                            |vertices_out[3]                            
+vertices_out[4]                            |vertices_out[4]                            
+vertices_out[5]                            |vertices_out[5]                            
+vertices_out[7]                            |vertices_out[7]                            
+vertices_out[6]                            |vertices_out[6]                            
+vertices_out[8]                            |vertices_out[8]                            
+vertices_out[10]                           |vertices_out[10]                           
+vertices_out[9]                            |vertices_out[9]                            
+vertices_out[11]                           |vertices_out[11]                           
+vertices_out[13]                           |vertices_out[13]                           
+vertices_out[14]                           |vertices_out[14]                           
+vertices_out[12]                           |vertices_out[12]                           
+vertices_out[15]                           |vertices_out[15]                           
+vertices[9]                                |vertices[9]                                
+cos_alpha[6]                               |cos_alpha[6]                               
+vertices[8]                                |vertices[8]                                
+cos_gamma[2]                               |cos_gamma[2]                               
+cos_gamma[4]                               |cos_gamma[4]                               
+cos_alpha[7]                               |cos_alpha[7]                               
+vertices[3]                                |vertices[3]                                
+vertices[4]                                |vertices[4]                                
+vertices[6]                                |vertices[6]                                
+cos_gamma[3]                               |cos_gamma[3]                               
+cos_alpha[3]                               |cos_alpha[3]                               
+cos_alpha[4]                               |cos_alpha[4]                               
+vertices[2]                                |vertices[2]                                
+vertices[5]                                |vertices[5]                                
+cos_gamma[5]                               |cos_gamma[5]                               
+cos_alpha[5]                               |cos_alpha[5]                               
+cos_alpha[8]                               |cos_alpha[8]                               
+cos_gamma[9]                               |cos_gamma[9]                               
+cos_gamma[0]                               |cos_gamma[0]                               
+cos_gamma[7]                               |cos_gamma[7]                               
+vertices[10]                               |vertices[10]                               
+cos_gamma[11]                              |cos_gamma[11]                              
+vertices[12]                               |vertices[12]                               
+cos_gamma[1]                               |cos_gamma[1]                               
+vertices[1]                                |vertices[1]                                
+vertices[7]                                |vertices[7]                                
+vertices[0]                                |vertices[0]                                
+cos_gamma[6]                               |cos_gamma[6]                               
+cos_alpha[9]                               |cos_alpha[9]                               
+cos_alpha[10]                              |cos_alpha[10]                              
+vertices[11]                               |vertices[11]                               
+dx[0]                                      |dx[0]                                      
+dx[1]                                      |dx[1]                                      
+dy[0]                                      |dy[0]                                      
+dy[1]                                      |dy[1]                                      
+dz[0]                                      |dz[0]                                      
+dz[1]                                      |dz[1]                                      
+cos_gamma[13]                              |cos_gamma[13]                              
+cos_gamma[14]                              |cos_gamma[14]                              
+cos_alpha[14]                              |cos_alpha[14]                              
+vertices[14]                               |vertices[14]                               
+dx[2]                                      |dx[2]                                      
+dx[3]                                      |dx[3]                                      
+dx[5]                                      |dx[5]                                      
+dx[4]                                      |dx[4]                                      
+dx[10]                                     |dx[10]                                     
+dx[9]                                      |dx[9]                                      
+dx[12]                                     |dx[12]                                     
+dx[6]                                      |dx[6]                                      
+dx[13]                                     |dx[13]                                     
+dx[7]                                      |dx[7]                                      
+dx[8]                                      |dx[8]                                      
+dx[11]                                     |dx[11]                                     
+dx[14]                                     |dx[14]                                     
+dy[2]                                      |dy[2]                                      
+dy[3]                                      |dy[3]                                      
+dy[5]                                      |dy[5]                                      
+dy[4]                                      |dy[4]                                      
+dy[10]                                     |dy[10]                                     
+dy[9]                                      |dy[9]                                      
+dy[12]                                     |dy[12]                                     
+dy[6]                                      |dy[6]                                      
+dy[13]                                     |dy[13]                                     
+dy[7]                                      |dy[7]                                      
+dy[8]                                      |dy[8]                                      
+dy[11]                                     |dy[11]                                     
+dy[14]                                     |dy[14]                                     
+cos_alpha[15]                              |cos_alpha[15]                              
+cos_gamma[10]                              |cos_gamma[10]                              
+cos_alpha[12]                              |cos_alpha[12]                              
+cos_alpha[13]                              |cos_alpha[13]                              
+vertices[13]                               |vertices[13]                               
+cos_alpha[2]                               |cos_alpha[2]                               
+cos_alpha[1]                               |cos_alpha[1]                               
+cos_alpha[0]                               |cos_alpha[0]                               
+cos_gamma[8]                               |cos_gamma[8]                               
+cos_alpha[11]                              |cos_alpha[11]                              
+cos_gamma[12]                              |cos_gamma[12]                              
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+sin_alpha[0]                               |sin_alpha[0]                               
+sin_alpha[1]                               |sin_alpha[1]                               
+sin_alpha[2]                               |sin_alpha[2]                               
+sin_alpha[3]                               |sin_alpha[3]                               
+sin_alpha[4]                               |sin_alpha[4]                               
+sin_alpha[5]                               |sin_alpha[5]                               
+sin_alpha[6]                               |sin_alpha[6]                               
+sin_alpha[7]                               |sin_alpha[7]                               
+sin_alpha[8]                               |sin_alpha[8]                               
+sin_alpha[9]                               |sin_alpha[9]                               
+sin_alpha[10]                              |sin_alpha[10]                              
+sin_alpha[11]                              |sin_alpha[11]                              
+sin_alpha[12]                              |sin_alpha[12]                              
+sin_alpha[13]                              |sin_alpha[13]                              
+sin_alpha[14]                              |sin_alpha[14]                              
+sin_alpha[15]                              |sin_alpha[15]                              
+cos_beta[0]                                |cos_beta[0]                                
+cos_beta[1]                                |cos_beta[1]                                
+cos_beta[2]                                |cos_beta[2]                                
+cos_beta[3]                                |cos_beta[3]                                
+cos_beta[4]                                |cos_beta[4]                                
+cos_beta[5]                                |cos_beta[5]                                
+cos_beta[6]                                |cos_beta[6]                                
+cos_beta[7]                                |cos_beta[7]                                
+cos_beta[8]                                |cos_beta[8]                                
+cos_beta[9]                                |cos_beta[9]                                
+cos_beta[10]                               |cos_beta[10]                               
+cos_beta[11]                               |cos_beta[11]                               
+cos_beta[12]                               |cos_beta[12]                               
+cos_beta[13]                               |cos_beta[13]                               
+cos_beta[14]                               |cos_beta[14]                               
+cos_beta[15]                               |cos_beta[15]                               
+sin_beta[0]                                |sin_beta[0]                                
+sin_beta[1]                                |sin_beta[1]                                
+sin_beta[2]                                |sin_beta[2]                                
+sin_beta[3]                                |sin_beta[3]                                
+sin_beta[4]                                |sin_beta[4]                                
+sin_beta[5]                                |sin_beta[5]                                
+sin_beta[6]                                |sin_beta[6]                                
+sin_beta[7]                                |sin_beta[7]                                
+sin_beta[8]                                |sin_beta[8]                                
+sin_beta[9]                                |sin_beta[9]                                
+sin_beta[10]                               |sin_beta[10]                               
+sin_beta[11]                               |sin_beta[11]                               
+sin_beta[12]                               |sin_beta[12]                               
+sin_beta[13]                               |sin_beta[13]                               
+sin_beta[14]                               |sin_beta[14]                               
+sin_beta[15]                               |sin_beta[15]                               
+sin_gamma[0]                               |sin_gamma[0]                               
+sin_gamma[1]                               |sin_gamma[1]                               
+sin_gamma[2]                               |sin_gamma[2]                               
+sin_gamma[3]                               |sin_gamma[3]                               
+sin_gamma[4]                               |sin_gamma[4]                               
+sin_gamma[5]                               |sin_gamma[5]                               
+sin_gamma[6]                               |sin_gamma[6]                               
+sin_gamma[7]                               |sin_gamma[7]                               
+sin_gamma[8]                               |sin_gamma[8]                               
+sin_gamma[9]                               |sin_gamma[9]                               
+sin_gamma[10]                              |sin_gamma[10]                              
+sin_gamma[11]                              |sin_gamma[11]                              
+sin_gamma[12]                              |sin_gamma[12]                              
+sin_gamma[13]                              |sin_gamma[13]                              
+sin_gamma[14]                              |sin_gamma[14]                              
+sin_gamma[15]                              |sin_gamma[15]                              
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes CompBlock and CompBlock are equivalent.
+Circuits match uniquely.

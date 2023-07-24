@@ -1,0 +1,1448 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Report</title>
+  <style type="text/css">
+body { font-family:arial ;}
+a { text-decoration:underline ; color:#003000 ;}
+a:hover { text-decoration:underline ; color:0030f0 ;}
+td { padding : 5px ;}
+table.topTitle { width:100% ;}
+table.topTitle td.l { text-align:left ; font-weight: bold ; font-size:30px ;}
+table.topTitle td.r { text-align:right ; font-weight: bold ; font-size:16px ;}
+table.blueBar { width : 100% ; border-spacing : 0px ;}
+table.blueBar td { background:#0036ff ; font-size:12px ; color : white ; text-align : left ; font-weight : bold ;}
+table.blueBar td.l { text-align : left ;}
+table.blueBar td.r { text-align : right ;}
+table.items { width:100% ; border-collapse:collapse ;}
+table.items td.label { font-weight:bold ; font-size:16px ; vertical-align:top ;}
+table.items td.mono { font-family:courier ; font-size:12px ; white-space:pre ;}
+div.label { font-weight:bold ; font-size:16px ; vertical-align:top ; text-align:center ;}
+table.grid { border-collapse:collapse ;}
+table.grid td { border:1px solid #bbb ; font-size:12px ;}
+body { font-family:arial ;}
+table.x { font-family:courier ; border-collapse:collapse ; padding:2px ;}
+table.x td { border:1px solid #bbb ;}
+td.tableTitle { font-weight:bold ; text-align:center ;}
+table.grid { border-collapse:collapse ;}
+table.grid td { border:1px solid #bbb ;}
+table.grid td.tableTitle { font-weight:bold ; text-align:center ;}
+table.mmap { border-collapse:collapse ; text-size:11px ; border:1px solid #d8d8d8 ;}
+table.mmap td { border-color:#d8d8d8 ; border-width:1px ; border-style:solid ;}
+table.mmap td.empty { border-style:none ; background-color:#f0f0f0 ;}
+table.mmap td.slavemodule { text-align:left ; font-size:11px ; border-style:solid solid none solid ;}
+table.mmap td.slavem { text-align:right ; font-size:9px ; font-style:italic ; border-style:none solid none solid ;}
+table.mmap td.slaveb { text-align:right ; font-size:9px ; font-style:italic ; border-style:none solid solid solid ;}
+table.mmap td.mastermodule { text-align:center ; font-size:11px ; border-style:solid solid none solid ;}
+table.mmap td.masterlr { text-align:center ; font-size:9px ; font-style:italic ; border-style:none solid solid solid ;}
+table.mmap td.masterl { text-align:center ; font-size:9px ; font-style:italic ; border-style:none none solid solid ;}
+table.mmap td.masterm { text-align:center ; font-size:9px ; font-style:italic ; border-style:none none solid none ;}
+table.mmap td.masterr { text-align:center ; font-size:9px ; font-style:italic ; border-style:none solid solid none ;}
+table.mmap td.addr { font-family:courier ; font-size:9px ; text-align:right ;}
+table.connectionboxes { border-collapse:separate ; border-spacing:0px ; font-family:arial ;}
+table.connectionboxes td.from { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.to { font-size:9px ; font-style:italic ; vertical-align:top ; text-align:right ;}
+table.connectionboxes td.lefthandwire { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:right ;}
+table.connectionboxes td.righthandwire { border-bottom:1px solid black ; font-size:9px ; font-style:italic ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.righthandlabel { font-size:11px ; vertical-align:bottom ; text-align:left ;}
+table.connectionboxes td.neighbor { padding:3px ; border:1px solid black ; font-size: 11px ; background:#e8e8e8 ; vertical-align:center ; text-align:center ;}
+table.connectionboxes td.main { padding:8px ; border:1px solid black ; font-size: 14px ; font-weight:bold ; background:#ffffff ; vertical-align:center ; text-align:center ;}
+.parametersbox { border:1px solid #d0d0d0 ; display:inline-block ; max-height:160px ; overflow:auto ; width:360px ; font-size:10px ;}
+.flowbox { display:inline-block ;}
+.parametersbox table { font-size:10px ;}
+td.parametername { font-style:italic ;}
+td.parametervalue { font-weight:bold ;}
+div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; border-top:1px solid #707070 ; border-bottom:1px solid #707070 ; padding:20px ; margin:20px ; width:auto ;}</style>
+ </head>
+ <body>
+  <table class="topTitle">
+   <tr>
+    <td class="l">Proyecto</td>
+    <td class="r">Proyecto
+     <br/>1.0
+     <br/>
+    </td>
+   </tr>
+  </table>
+  <table class="blueBar">
+   <tr>
+    <td class="l">2014.06.09.14:30:39</td>
+    <td class="r">Generation Report</td>
+   </tr>
+  </table>
+  <table class="items">
+   <tr>
+    <td class="label">Output Directory</td>
+    <td class="mono">C:/Nueva_carpeta/Proyecto_v3.0/</td>
+   </tr>
+   <tr>
+    <td class="label">Files</td>
+    <td class="mono">C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/Proyecto.v (792062 bytes VERILOG)
+     <br/>
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0.ocp (856 bytes OTHER)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0.sdc (4292 bytes SDC)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0.v (448136 bytes VERILOG_ENCRYPT)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_bht_ram.mif (2392 bytes MIF)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_dc_tag_ram.mif (920 bytes MIF)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_ic_tag_ram.mif (1881 bytes MIF)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_jtag_debug_module_sysclk.v (7240 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_jtag_debug_module_tck.v (8634 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_jtag_debug_module_wrapper.v (10649 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_mult_cell.v (6342 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_ociram_default_contents.mif (5714 bytes MIF)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_oci_test_bench.v (1531 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_rf_ram_a.mif (600 bytes MIF)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_rf_ram_b.mif (600 bytes MIF)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_nios2_qsys_0_test_bench.v (32108 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_sysid_qsys_0.v (1459 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_lcd_0.v (2259 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_sdram_0.v (23805 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_sdram_0_test_component.v (9101 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_sgdma_0.v (93616 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_onchip_memory2_0.hex (21517 bytes HEX)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_onchip_memory2_0.v (4067 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_dc_fifo.v (23570 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_dcfifo_synchronizer_bundle.v (1458 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_dc_fifo.sdc (768 bytes SDC)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_pixel_converter.v (6790 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_video_sync_generator.v (21510 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_timer_0.v (5109 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/ps2.vhd (6714 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/gpu.vhd (4939 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/core.vhd (17222 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/core_pkg.vhd (5282 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/ftou16.vhd (1260 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/ftou32.vhd (814 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/ftou8.vhd (1529 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/portc_tristate_bridge.vhd (1045 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/registers.vhd (1384 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/u16tof.vhd (1151 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/u32tof.vhd (838 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/u8tof.vhd (1330 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/add_sub.vhd (2383 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/div.vhd (3936 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/fadd_fsub.vhd (5655 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/fcomp_fmin_fmax.vhd (7070 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/fdiv.vhd (4575 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/fmul.vhd (4716 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/fmulp2.vhd (2184 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/mul.vhd (4531 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/pfloat_pkg.vhd (18865 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/trunc_round_ceil_floor.vhd (3707 bytes VHDL)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_mm_bridge.v (11560 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_onchip_memory2_1.hex (5389 bytes HEX)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_onchip_memory2_1.v (4061 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_master_translator.sv (16802 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_slave_translator.sv (16043 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_slave_agent.sv (19132 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_burst_uncompressor.sv (10373 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_sc_fifo.v (32228 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_master_agent.sv (8686 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_addr_router.sv (6480 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_addr_router_001.sv (9639 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_addr_router_002.sv (6493 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_addr_router_003.sv (6050 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router.sv (6043 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router_001.sv (6055 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router_002.sv (5973 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router_004.sv (6139 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router_009.sv (6055 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router_012.sv (5972 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_addr_router_005.sv (6032 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_id_router_013.sv (6048 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_traffic_limiter.sv (12802 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_st_pipeline_base.v (4716 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_burst_adapter.sv (37064 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_reset_controller.v (3595 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_reset_synchronizer.v (3564 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_reset_controller.sdc (1179 bytes SDC)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_demux.sv (4121 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_demux_001.sv (11183 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_demux_002.sv (4121 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_demux_003.sv (3487 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_demux_004.sv (3492 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_arbitrator.sv (9460 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_mux.sv (10428 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_mux_004.sv (11227 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_rsp_xbar_demux_004.sv (4755 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_rsp_xbar_mux.sv (11241 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_rsp_xbar_mux_001.sv (20206 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_demux_005.sv (3482 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_cmd_xbar_mux_013.sv (10430 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_rsp_xbar_demux_013.sv (4114 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_width_adapter.sv (35859 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v (7493 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_st_clock_crosser.v (4900 bytes VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/Proyecto_irq_mapper.sv (2080 bytes SYSTEM_VERILOG)
+     <br/>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_irq_clock_crosser.sv (1651 bytes SYSTEM_VERILOG)
+     <br/>
+    </td>
+   </tr>
+   <tr>
+    <td class="label">Instantiations</td>
+    <td class="mono">
+     <table class="grid">
+      <tr>
+       <td><b>Proyecto</b>
+        <br/>Proyecto v1.0</td>
+       <td><b>Proyecto_nios2_qsys_0</b> as nios2_qsys_0
+        <br/><b>Proyecto_sysid_qsys_0</b> as sysid_qsys_0
+        <br/><b>Proyecto_lcd_0</b> as lcd_0
+        <br/><b>Proyecto_sdram_0</b> as sdram_0, sdram_1
+        <br/><b>Proyecto_sgdma_0</b> as sgdma_0
+        <br/><b>Proyecto_onchip_memory2_0</b> as onchip_memory2_0
+        <br/><b>altera_avalon_dc_fifo</b> as dc_fifo_0
+        <br/><b>altera_avalon_pixel_converter</b> as pixel_converter_0
+        <br/><b>altera_avalon_video_sync_generator</b> as video_sync_generator_0
+        <br/><b>Proyecto_timer_0</b> as timer_0
+        <br/><b>ps2</b> as ps2_0, ps2_1
+        <br/><b>gpu</b> as gpu_0
+        <br/><b>altera_avalon_mm_bridge</b> as mm_bridge_0
+        <br/><b>Proyecto_onchip_memory2_1</b> as onchip_memory2_1
+        <br/><b>altera_merlin_master_translator</b> as nios2_qsys_0_instruction_master_translator, nios2_qsys_0_data_master_translator, gpu_0_data_master_translator, sgdma_0_descriptor_write_translator, sgdma_0_descriptor_read_translator, sgdma_0_m_read_translator, mm_bridge_0_m0_translator
+        <br/><b>altera_merlin_slave_translator</b> as nios2_qsys_0_jtag_debug_module_translator, sdram_0_s1_translator, sysid_qsys_0_control_slave_translator, lcd_0_control_slave_translator, onchip_memory2_0_s1_translator, sgdma_0_csr_translator, timer_0_s1_translator, ps2_0_avalon_slave_translator, ps2_1_avalon_slave_translator, mm_bridge_0_s0_translator, gpu_0_instruction_slave_translator, onchip_memory2_1_s1_translator, gpu_0_control_slave_translator, sdram_1_s1_translator
+        <br/><b>altera_merlin_slave_agent</b> as onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent, timer_0_s1_translator_avalon_universal_slave_0_agent, sgdma_0_csr_translator_avalon_universal_slave_0_agent, ps2_1_avalon_slave_translator_avalon_universal_slave_0_agent, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent, ps2_0_avalon_slave_translator_avalon_universal_slave_0_agent, sdram_0_s1_translator_avalon_universal_slave_0_agent, mm_bridge_0_s0_translator_avalon_universal_slave_0_agent, sysid_qsys_0_control_slave_translator_avalon_universal_slave_0_agent, gpu_0_instruction_slave_translator_avalon_universal_slave_0_agent, onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent, lcd_0_control_slave_translator_avalon_universal_slave_0_agent, gpu_0_control_slave_translator_avalon_universal_slave_0_agent, sdram_1_s1_translator_avalon_universal_slave_0_agent
+        <br/><b>altera_avalon_sc_fifo</b> as onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent_rdata_fifo, timer_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, timer_0_s1_translator_avalon_universal_slave_0_agent_rdata_fifo, sgdma_0_csr_translator_avalon_universal_slave_0_agent_rsp_fifo, sgdma_0_csr_translator_avalon_universal_slave_0_agent_rdata_fifo, ps2_1_avalon_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, ps2_1_avalon_slave_translator_avalon_universal_slave_0_agent_rdata_fifo, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo, nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rdata_fifo, ps2_0_avalon_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, ps2_0_avalon_slave_translator_avalon_universal_slave_0_agent_rdata_fifo, sdram_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, sdram_0_s1_translator_avalon_universal_slave_0_agent_rdata_fifo, mm_bridge_0_s0_translator_avalon_universal_slave_0_agent_rsp_fifo, mm_bridge_0_s0_translator_avalon_universal_slave_0_agent_rdata_fifo, sysid_qsys_0_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, sysid_qsys_0_control_slave_translator_avalon_universal_slave_0_agent_rdata_fifo, gpu_0_instruction_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, gpu_0_instruction_slave_translator_avalon_universal_slave_0_agent_rdata_fifo, onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo, onchip_memory2_0_s1_translator_avalon_universal_slave_0_agent_rdata_fifo, lcd_0_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, lcd_0_control_slave_translator_avalon_universal_slave_0_agent_rdata_fifo, gpu_0_control_slave_translator_avalon_universal_slave_0_agent_rsp_fifo, gpu_0_control_slave_translator_avalon_universal_slave_0_agent_rdata_fifo, sdram_1_s1_translator_avalon_universal_slave_0_agent_rsp_fifo
+        <br/><b>altera_merlin_master_agent</b> as nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent, sgdma_0_descriptor_read_translator_avalon_universal_master_0_agent, sgdma_0_descriptor_write_translator_avalon_universal_master_0_agent, nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent, gpu_0_data_master_translator_avalon_universal_master_0_agent, mm_bridge_0_m0_translator_avalon_universal_master_0_agent, sgdma_0_m_read_translator_avalon_universal_master_0_agent
+        <br/><b>Proyecto_addr_router</b> as addr_router
+        <br/><b>Proyecto_addr_router_001</b> as addr_router_001
+        <br/><b>Proyecto_addr_router_002</b> as addr_router_002
+        <br/><b>Proyecto_addr_router_003</b> as addr_router_003, addr_router_004
+        <br/><b>Proyecto_id_router</b> as id_router
+        <br/><b>Proyecto_id_router_001</b> as id_router_001
+        <br/><b>Proyecto_id_router_002</b> as id_router_002, id_router_003, id_router_005, id_router_006, id_router_007, id_router_008, id_router_010
+        <br/><b>Proyecto_id_router_004</b> as id_router_004
+        <br/><b>Proyecto_id_router_009</b> as id_router_009, id_router_011
+        <br/><b>Proyecto_id_router_012</b> as id_router_012
+        <br/><b>Proyecto_addr_router_005</b> as addr_router_005, addr_router_006
+        <br/><b>Proyecto_id_router_013</b> as id_router_013
+        <br/><b>altera_merlin_traffic_limiter</b> as limiter, limiter_001, limiter_002
+        <br/><b>altera_merlin_burst_adapter</b> as burst_adapter, burst_adapter_001, burst_adapter_002
+        <br/><b>altera_reset_controller</b> as rst_controller, rst_controller_001, rst_controller_002
+        <br/><b>Proyecto_cmd_xbar_demux</b> as cmd_xbar_demux
+        <br/><b>Proyecto_cmd_xbar_demux_001</b> as cmd_xbar_demux_001
+        <br/><b>Proyecto_cmd_xbar_demux_002</b> as cmd_xbar_demux_002, rsp_xbar_demux, rsp_xbar_demux_001, rsp_xbar_demux_009, rsp_xbar_demux_011
+        <br/><b>Proyecto_cmd_xbar_demux_003</b> as cmd_xbar_demux_003, rsp_xbar_demux_002, rsp_xbar_demux_003, rsp_xbar_demux_005, rsp_xbar_demux_006, rsp_xbar_demux_007, rsp_xbar_demux_008, rsp_xbar_demux_010, rsp_xbar_demux_012
+        <br/><b>Proyecto_cmd_xbar_demux_004</b> as cmd_xbar_demux_004
+        <br/><b>Proyecto_cmd_xbar_mux</b> as cmd_xbar_mux, cmd_xbar_mux_001, cmd_xbar_mux_009, cmd_xbar_mux_011
+        <br/><b>Proyecto_cmd_xbar_mux_004</b> as cmd_xbar_mux_004
+        <br/><b>Proyecto_rsp_xbar_demux_004</b> as rsp_xbar_demux_004
+        <br/><b>Proyecto_rsp_xbar_mux</b> as rsp_xbar_mux, rsp_xbar_mux_002
+        <br/><b>Proyecto_rsp_xbar_mux_001</b> as rsp_xbar_mux_001
+        <br/><b>Proyecto_cmd_xbar_demux_005</b> as cmd_xbar_demux_005, cmd_xbar_demux_006
+        <br/><b>Proyecto_cmd_xbar_mux_013</b> as cmd_xbar_mux_013
+        <br/><b>Proyecto_rsp_xbar_demux_013</b> as rsp_xbar_demux_013
+        <br/><b>altera_merlin_width_adapter</b> as width_adapter, width_adapter_001, width_adapter_002, width_adapter_003, width_adapter_004, width_adapter_005
+        <br/><b>altera_avalon_st_handshake_clock_crosser</b> as crosser, crosser_001, crosser_002, crosser_003, crosser_004, crosser_005, crosser_006, crosser_007
+        <br/><b>Proyecto_irq_mapper</b> as irq_mapper
+        <br/><b>altera_irq_clock_crosser</b> as irq_synchronizer
+        <br/>
+       </td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_nios2_qsys_0</b>
+        <br/>altera_nios2_qsys v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_sysid_qsys_0</b>
+        <br/>altera_avalon_sysid_qsys v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_lcd_0</b>
+        <br/>altera_avalon_lcd_16207 v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_sdram_0</b>
+        <br/>altera_avalon_new_sdram_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_sgdma_0</b>
+        <br/>altera_avalon_sgdma v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_onchip_memory2_0</b>
+        <br/>altera_avalon_onchip_memory2 v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_dc_fifo</b>
+        <br/>altera_avalon_dc_fifo v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_pixel_converter</b>
+        <br/>altera_avalon_pixel_converter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_video_sync_generator</b>
+        <br/>altera_avalon_video_sync_generator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_timer_0</b>
+        <br/>altera_avalon_timer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>ps2</b>
+        <br/>ps2 v1.0</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>gpu</b>
+        <br/>gpu v1.0</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_mm_bridge</b>
+        <br/>altera_avalon_mm_bridge v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_onchip_memory2_1</b>
+        <br/>altera_avalon_onchip_memory2 v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_master_translator</b>
+        <br/>altera_merlin_master_translator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_slave_translator</b>
+        <br/>altera_merlin_slave_translator v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_slave_agent</b>
+        <br/>altera_merlin_slave_agent v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_sc_fifo</b>
+        <br/>altera_avalon_sc_fifo v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_master_agent</b>
+        <br/>altera_merlin_master_agent v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_addr_router</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_addr_router_001</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_addr_router_002</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_addr_router_003</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router_001</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router_002</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router_004</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router_009</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router_012</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_addr_router_005</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_id_router_013</b>
+        <br/>altera_merlin_router v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_traffic_limiter</b>
+        <br/>altera_merlin_traffic_limiter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_burst_adapter</b>
+        <br/>altera_merlin_burst_adapter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_reset_controller</b>
+        <br/>altera_reset_controller v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_demux</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_demux_001</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_demux_002</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_demux_003</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_demux_004</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_mux</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_mux_004</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_rsp_xbar_demux_004</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_rsp_xbar_mux</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_rsp_xbar_mux_001</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_demux_005</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_cmd_xbar_mux_013</b>
+        <br/>altera_merlin_multiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_rsp_xbar_demux_013</b>
+        <br/>altera_merlin_demultiplexer v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_merlin_width_adapter</b>
+        <br/>altera_merlin_width_adapter v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_avalon_st_handshake_clock_crosser</b>
+        <br/>altera_avalon_st_handshake_clock_crosser v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>Proyecto_irq_mapper</b>
+        <br/>altera_irq_mapper v11.1</td>
+       <td></td>
+      </tr>
+      <tr>
+       <td><b>altera_irq_clock_crosser</b>
+        <br/>altera_irq_clock_crosser v11.1</td>
+       <td></td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table>
+  <div style="width:100% ;  height:10px"> </div>
+  <div class="label">Generation Messages</div>
+  <div style="white-space:pre ; font-family:courier">2014.06.09.14:27:51 [Debug] Proyecto.altera_nios2_qsys: When a generate simulation callback is defined a synthesis generation callback should also be defined
+2014.06.09.14:29:40 [Debug] Proyecto.nios2_qsys_0: Timing: VAL:1/0.040s ELA:1/0.000s
+2014.06.09.14:29:40 [Info] Proyecto.sysid_qsys_0: System ID will no longer be automatically assigned.
+2014.06.09.14:29:40 [Info] Proyecto.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+2014.06.09.14:29:40 [Debug] Proyecto.sysid_qsys_0: Timing: VAL:2/0.005s/0.010s
+2014.06.09.14:29:40 [Debug] Proyecto.clock_bridge_0: Timing: ELA:1/0.000s
+2014.06.09.14:29:40 [Info] Proyecto.onchip_memory2_0: Memory will be initialized from onchip_memory2_0.hex
+2014.06.09.14:29:40 [Debug] Proyecto.dc_fifo_0: <b>add_interface_port</b>: Added reset port <b>reset_n</b> to <b>in_clk_reset</b> instead of <b>in_clk</b>
+2014.06.09.14:29:40 [Debug] Proyecto.dc_fifo_0: <b>add_interface_port</b>: Added reset port <b>reset_n</b> to <b>out_clk_reset</b> instead of <b>out_clk</b>
+2014.06.09.14:29:40 [Debug] Proyecto.dc_fifo_0: Timing: VAL:1/0.000s ELA:1/0.000s
+2014.06.09.14:29:40 [Debug] Proyecto.pixel_converter_0: <b>add_interface_port</b>: Added reset port <b>reset_n</b> to <b>clk_reset</b> instead of <b>clk</b>
+2014.06.09.14:29:40 [Debug] Proyecto.pixel_converter_0: Timing: ELA:1/0.000s QME:1/0.670s
+2014.06.09.14:29:40 [Debug] Proyecto.video_sync_generator_0: <b>add_interface_port</b>: Added reset port <b>reset_n</b> to <b>clk_reset</b> instead of <b>clk</b>
+2014.06.09.14:29:40 [Debug] Proyecto.video_sync_generator_0: Timing: ELA:1/0.000s QME:1/0.660s
+2014.06.09.14:29:40 [Debug] Proyecto.clock_bridge_1: Timing: ELA:1/0.000s
+2014.06.09.14:29:40 [Debug] Proyecto.ps2_0: Timing: QME:1/1.070s
+2014.06.09.14:29:40 [Debug] Proyecto.ps2_1: Timing: QME:1/1.070s
+2014.06.09.14:29:40 [Debug] Proyecto.gpu_0: Timing: QME:1/1.280s
+2014.06.09.14:29:40 [Debug] Proyecto.mm_bridge_0: Timing: ELA:1/0.000s
+2014.06.09.14:29:40 [Info] Proyecto.onchip_memory2_1: Memory will be initialized from onchip_memory2_1.hex
+2014.06.09.14:29:40 [Info] Proyecto: Generating <b>Proyecto</b> "<b>Proyecto</b>" for QUARTUS_SYNTH
+2014.06.09.14:29:40 [Debug] Proyecto: queue size: 0 starting:Proyecto "Proyecto"
+2014.06.09.14:29:40 [Debug] Transform: PipelineBridgeSwap
+2014.06.09.14:29:40 [Info] pipeline_bridge_swap_transform: After transform: <b>19</b> modules, <b>80</b> connections
+2014.06.09.14:29:40 [Debug] Transform: ClockCrossingBridgeSwap
+2014.06.09.14:29:40 [Debug] Transform: QsysBetaIPSwap
+2014.06.09.14:29:40 [Debug] Transform: CustomInstructionTransform
+2014.06.09.14:29:40 [Info] No custom instruction connections, skipping transform 
+2014.06.09.14:29:40 [Debug] Transform: TristateConduitUpgradeTransform
+2014.06.09.14:29:40 [Debug] Transform: TranslatorTransform
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Info] merlin_translator_transform: After transform: <b>40</b> modules, <b>164</b> connections
+2014.06.09.14:29:40 [Debug] Transform: DomainTransform
+2014.06.09.14:29:40 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0.instruction_master and nios2_qsys_0_instruction_master_translator.avalon_anti_master_0
+2014.06.09.14:29:40 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0.data_master and nios2_qsys_0_data_master_translator.avalon_anti_master_0
+2014.06.09.14:29:40 [Debug] Transform merlin_domain_transform not run on matched interfaces gpu_0.data_master and gpu_0_data_master_translator.avalon_anti_master_0
+2014.06.09.14:29:40 [Debug] Transform merlin_domain_transform not run on matched interfaces sgdma_0.descriptor_write and sgdma_0_descriptor_write_translator.avalon_anti_master_0
+2014.06.09.14:29:40 [Debug] Transform merlin_domain_transform not run on matched interfaces sgdma_0.descriptor_read and sgdma_0_descriptor_read_translator.avalon_anti_master_0
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:40 [Progress] min: 0
+2014.06.09.14:29:40 [Progress] max: 1
+2014.06.09.14:29:40 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces nios2_qsys_0_jtag_debug_module_translator.avalon_anti_slave_0 and nios2_qsys_0.jtag_debug_module
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sdram_0_s1_translator.avalon_anti_slave_0 and sdram_0.s1
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sysid_qsys_0_control_slave_translator.avalon_anti_slave_0 and sysid_qsys_0.control_slave
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces lcd_0_control_slave_translator.avalon_anti_slave_0 and lcd_0.control_slave
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces onchip_memory2_0_s1_translator.avalon_anti_slave_0 and onchip_memory2_0.s1
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sgdma_0_csr_translator.avalon_anti_slave_0 and sgdma_0.csr
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces timer_0_s1_translator.avalon_anti_slave_0 and timer_0.s1
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces ps2_0_avalon_slave_translator.avalon_anti_slave_0 and ps2_0.avalon_slave
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces ps2_1_avalon_slave_translator.avalon_anti_slave_0 and ps2_1.avalon_slave
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces mm_bridge_0_s0_translator.avalon_anti_slave_0 and mm_bridge_0.s0
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces gpu_0_instruction_slave_translator.avalon_anti_slave_0 and gpu_0.instruction_slave
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces onchip_memory2_1_s1_translator.avalon_anti_slave_0 and onchip_memory2_1.s1
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces gpu_0_control_slave_translator.avalon_anti_slave_0 and gpu_0.control_slave
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sgdma_0.m_read and sgdma_0_m_read_translator.avalon_anti_master_0
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces mm_bridge_0.m0 and mm_bridge_0_m0_translator.avalon_anti_master_0
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Debug] Transform merlin_domain_transform not run on matched interfaces sdram_1_s1_translator.avalon_anti_slave_0 and sdram_1.s1
+2014.06.09.14:29:41 [Info] merlin_domain_transform: After transform: <b>90</b> modules, <b>468</b> connections
+2014.06.09.14:29:41 [Debug] Transform: RouterTransform
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Info] merlin_router_transform: After transform: <b>111</b> modules, <b>552</b> connections
+2014.06.09.14:29:41 [Debug] Transform: TrafficLimiterTransform
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Info] merlin_traffic_limiter_transform: After transform: <b>114</b> modules, <b>567</b> connections
+2014.06.09.14:29:41 [Debug] Transform: BurstTransform
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Info] merlin_burst_transform: After transform: <b>117</b> modules, <b>579</b> connections
+2014.06.09.14:29:41 [Debug] Transform: ResetAdaptation
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Info] reset_adaptation_transform: After transform: <b>120</b> modules, <b>454</b> connections
+2014.06.09.14:29:41 [Debug] Transform: NetworkToSwitchTransform
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Info] merlin_network_to_switch_transform: After transform: <b>160</b> modules, <b>538</b> connections
+2014.06.09.14:29:41 [Debug] Transform: WidthTransform
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:41 [Info] merlin_width_transform: After transform: <b>166</b> modules, <b>556</b> connections
+2014.06.09.14:29:41 [Debug] Transform: RouterTableTransform
+2014.06.09.14:29:41 [Debug] Transform: ClockCrossingTransform
+2014.06.09.14:29:41 [Info] Inserting clock-crossing logic between cmd_xbar_demux_001.src10 and cmd_xbar_mux_010.sink0
+2014.06.09.14:29:41 [Progress] min: 0
+2014.06.09.14:29:41 [Progress] max: 1
+2014.06.09.14:29:41 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between cmd_xbar_demux_001.src12 and cmd_xbar_mux_012.sink0
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between cmd_xbar_demux_002.src0 and cmd_xbar_mux_009.sink1
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between cmd_xbar_demux_002.src1 and cmd_xbar_mux_011.sink1
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between rsp_xbar_demux_009.src1 and rsp_xbar_mux_002.sink0
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between rsp_xbar_demux_010.src0 and rsp_xbar_mux_001.sink10
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between rsp_xbar_demux_011.src1 and rsp_xbar_mux_002.sink1
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] Inserting clock-crossing logic between rsp_xbar_demux_012.src0 and rsp_xbar_mux_001.sink12
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] com_altera_sopcmodel_transforms_avalon_ClockCrossingTransform: After transform: <b>174</b> modules, <b>596</b> connections
+2014.06.09.14:29:42 [Debug] Transform: PipelineTransform
+2014.06.09.14:29:42 [Debug] Transform: TrafficLimiterUpdateTransform
+2014.06.09.14:29:42 [Info] limiter_update_transform: After transform: <b>174</b> modules, <b>599</b> connections
+2014.06.09.14:29:42 [Debug] Transform: InterruptMapperTransform
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] merlin_interrupt_mapper_transform: After transform: <b>175</b> modules, <b>602</b> connections
+2014.06.09.14:29:42 [Debug] Transform: InterruptSyncTransform
+2014.06.09.14:29:42 [Progress] min: 0
+2014.06.09.14:29:42 [Progress] max: 1
+2014.06.09.14:29:42 [Progress] current: 1
+2014.06.09.14:29:42 [Info] merlin_interrupt_sync_transform: After transform: <b>176</b> modules, <b>607</b> connections
+2014.06.09.14:29:42 [Debug] Transform: InterruptFanoutTransform
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_nios2_qsys</b> "<b>submodules/Proyecto_nios2_qsys_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sysid_qsys</b> "<b>submodules/Proyecto_sysid_qsys_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_lcd_16207</b> "<b>submodules/Proyecto_lcd_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_new_sdram_controller</b> "<b>submodules/Proyecto_sdram_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_new_sdram_controller</b> "<b>submodules/Proyecto_sdram_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sgdma</b> "<b>submodules/Proyecto_sgdma_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_onchip_memory2</b> "<b>submodules/Proyecto_onchip_memory2_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_dc_fifo</b> "<b>submodules/altera_avalon_dc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_pixel_converter</b> "<b>submodules/altera_avalon_pixel_converter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_video_sync_generator</b> "<b>submodules/altera_avalon_video_sync_generator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_timer</b> "<b>submodules/Proyecto_timer_0</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>ps2</b> "<b>submodules/ps2</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>ps2</b> "<b>submodules/ps2</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>gpu</b> "<b>submodules/gpu</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_mm_bridge</b> "<b>submodules/altera_avalon_mm_bridge</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_onchip_memory2</b> "<b>submodules/Proyecto_onchip_memory2_1</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_translator</b> "<b>submodules/altera_merlin_master_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_translator</b> "<b>submodules/altera_merlin_slave_translator</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_slave_agent</b> "<b>submodules/altera_merlin_slave_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_sc_fifo</b> "<b>submodules/altera_avalon_sc_fifo</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_master_agent</b> "<b>submodules/altera_merlin_master_agent</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router_001</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_001</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_004</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_009</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_009</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_012</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router_005</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_addr_router_005</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_router</b> "<b>submodules/Proyecto_id_router_013</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_traffic_limiter</b> "<b>submodules/altera_merlin_traffic_limiter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_traffic_limiter</b> "<b>submodules/altera_merlin_traffic_limiter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_traffic_limiter</b> "<b>submodules/altera_merlin_traffic_limiter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_burst_adapter</b> "<b>submodules/altera_merlin_burst_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_burst_adapter</b> "<b>submodules/altera_merlin_burst_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_burst_adapter</b> "<b>submodules/altera_merlin_burst_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_001</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_004</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_cmd_xbar_mux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_cmd_xbar_mux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_cmd_xbar_mux_004</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_cmd_xbar_mux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_cmd_xbar_mux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_rsp_xbar_demux_004</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_002</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_003</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_rsp_xbar_mux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_rsp_xbar_mux_001</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_rsp_xbar_mux</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_005</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_cmd_xbar_demux_005</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_multiplexer</b> "<b>submodules/Proyecto_cmd_xbar_mux_013</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_demultiplexer</b> "<b>submodules/Proyecto_rsp_xbar_demux_013</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_merlin_width_adapter</b> "<b>submodules/altera_merlin_width_adapter</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_avalon_st_handshake_clock_crosser</b> "<b>submodules/altera_avalon_st_handshake_clock_crosser</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_irq_mapper</b> "<b>submodules/Proyecto_irq_mapper</b>"
+2014.06.09.14:29:42 [Debug] Proyecto: "<b>Proyecto</b>" reuses <b>altera_irq_clock_crosser</b> "<b>submodules/altera_irq_clock_crosser</b>"
+2014.06.09.14:29:43 [Debug] Proyecto: queue size: 160 starting:altera_nios2_qsys "submodules/Proyecto_nios2_qsys_0"
+2014.06.09.14:29:43 [Info] nios2_qsys_0: Starting RTL generation for module 'Proyecto_nios2_qsys_0'
+2014.06.09.14:29:43 [Info] nios2_qsys_0:   Generation command is [exec C:/altera/11.1sp2/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/11.1sp2/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/11.1sp2/quartus/sopc_builder/bin/europa -I C:/altera/11.1sp2/quartus/sopc_builder/bin/perl_lib -I C:/altera/11.1sp2/quartus/sopc_builder/bin -I C:/altera/11.1sp2/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/11.1sp2/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/11.1sp2/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/11.1sp2/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/11.1sp2/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=Proyecto_nios2_qsys_0 --dir=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0005_nios2_qsys_0_gen/ --quartus_dir=C:/altera/11.1sp2/quartus --verilog --config=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0005_nios2_qsys_0_gen//Proyecto_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*) Starting Nios II generation
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   Checking for encrypted license (non-evaluation).
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   Couldn't query license setup in Quartus directory C:/altera/11.1sp2/quartus
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   LM_LICENSE_FILE environment variable is empty
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   Elaborating CPU configuration settings
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)   Creating all objects for CPU
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:43 (*)     Testbench
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)     Instruction decoding
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)       Instruction fields
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)       Instruction decodes
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)       Signals for RTL simulation waveforms
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)       Instruction controls
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)     Pipeline frontend
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:44 (*)     Pipeline backend
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:47 (*)   Generating RTL from CPU objects
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:48 (*)   Creating encrypted RTL
+2014.06.09.14:29:50 [Info] nios2_qsys_0: # 2014.06.09 14:29:50 (*) Done Nios II generation
+2014.06.09.14:29:50 [Info] nios2_qsys_0: Done RTL generation for module 'Proyecto_nios2_qsys_0'
+2014.06.09.14:29:50 [Info] nios2_qsys_0: "<b>Proyecto</b>" instantiated <b>altera_nios2_qsys</b> "<b>nios2_qsys_0</b>"
+2014.06.09.14:29:50 [Debug] Proyecto: queue size: 159 starting:altera_avalon_sysid_qsys "submodules/Proyecto_sysid_qsys_0"
+2014.06.09.14:29:50 [Info] sysid_qsys_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_sysid_qsys</b> "<b>sysid_qsys_0</b>"
+2014.06.09.14:29:50 [Debug] Proyecto: queue size: 158 starting:altera_avalon_lcd_16207 "submodules/Proyecto_lcd_0"
+2014.06.09.14:29:50 [Info] Starting classic module elaboration.
+2014.06.09.14:29:51 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0007_sopclgen  --no_splash --refresh C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:29:52 [Info] Finished elaborating classic module.
+2014.06.09.14:29:52 [Progress] Executing: C:/altera/11.1sp2/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0007_sopclgen/yysystem.ptf
+2014.06.09.14:29:52 [Info] Running sopc_builder...
+2014.06.09.14:29:54 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0007_sopclgen  --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:29:55 [Progress] No .sopc_builder configuration file(!)
+2014.06.09.14:29:55 [Progress] .
+2014.06.09.14:29:56 [Progress] # 2014.06.09 14:29:56 (*) Success: sopc_builder finished.
+2014.06.09.14:29:56 [Info] lcd_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_lcd_16207</b> "<b>lcd_0</b>"
+2014.06.09.14:29:56 [Debug] Proyecto: queue size: 157 starting:altera_avalon_new_sdram_controller "submodules/Proyecto_sdram_0"
+2014.06.09.14:29:56 [Info] Starting classic module elaboration.
+2014.06.09.14:29:58 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0008_sopclgen  --no_splash --refresh C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:29:59 [Info] Finished elaborating classic module.
+2014.06.09.14:29:59 [Progress] Executing: C:/altera/11.1sp2/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0008_sopclgen/yysystem.ptf
+2014.06.09.14:29:59 [Info] Running sopc_builder...
+2014.06.09.14:30:01 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0008_sopclgen  --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:02 [Progress] No .sopc_builder configuration file(!)
+2014.06.09.14:30:02 [Progress] .
+2014.06.09.14:30:02 [Progress] .
+2014.06.09.14:30:02 [Progress] # 2014.06.09 14:30:02 (*) Running Test Generator Program for Proyecto_sdram_0
+2014.06.09.14:30:03 [Progress] # 2014.06.09 14:30:03 (*) Success: sopc_builder finished.
+2014.06.09.14:30:04 [Info] sdram_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram_0</b>"
+2014.06.09.14:30:04 [Debug] Proyecto: queue size: 155 starting:altera_avalon_sgdma "submodules/Proyecto_sgdma_0"
+2014.06.09.14:30:04 [Info] Starting classic module elaboration.
+2014.06.09.14:30:05 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0009_sopclgen  --no_splash --refresh C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0009_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:07 [Info] Finished elaborating classic module.
+2014.06.09.14:30:07 [Progress] Executing: C:/altera/11.1sp2/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0009_sopclgen/yysystem.ptf
+2014.06.09.14:30:07 [Info] Running sopc_builder...
+2014.06.09.14:30:08 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0009_sopclgen  --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0009_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:10 [Progress] No .sopc_builder configuration file(!)
+2014.06.09.14:30:10 [Progress] ..
+2014.06.09.14:30:13 [Progress] # 2014.06.09 14:30:13 (*) Success: sopc_builder finished.
+2014.06.09.14:30:13 [Info] sgdma_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_sgdma</b> "<b>sgdma_0</b>"
+2014.06.09.14:30:13 [Debug] Proyecto: queue size: 154 starting:altera_avalon_onchip_memory2 "submodules/Proyecto_onchip_memory2_0"
+2014.06.09.14:30:13 [Info] Starting classic module elaboration.
+2014.06.09.14:30:15 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0010_sopclgen  --no_splash --refresh C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0010_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:16 [Info] Finished elaborating classic module.
+2014.06.09.14:30:16 [Progress] Executing: C:/altera/11.1sp2/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0010_sopclgen/yysystem.ptf
+2014.06.09.14:30:16 [Info] Running sopc_builder...
+2014.06.09.14:30:18 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0010_sopclgen  --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0010_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:19 [Progress] No .sopc_builder configuration file(!)
+2014.06.09.14:30:19 [Progress] .
+2014.06.09.14:30:20 [Progress] # 2014.06.09 14:30:20 (*) Success: sopc_builder finished.
+2014.06.09.14:30:20 [Info] onchip_memory2_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>onchip_memory2_0</b>"
+2014.06.09.14:30:20 [Debug] Proyecto: queue size: 153 starting:altera_avalon_dc_fifo "submodules/altera_avalon_dc_fifo"
+2014.06.09.14:30:20 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:30:20 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_dcfifo_synchronizer_bundle.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0011_sopcqmap/
+2014.06.09.14:30:21 [Debug] Command took 0.680s
+2014.06.09.14:30:21 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:30:21 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:\altera\11.1sp2\ip\altera\sopc_builder_ip\altera_avalon_dc_fifo\altera_avalon_dc_fifo.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_dcfifo_synchronizer_bundle.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0012_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=altera_avalon_dc_fifo "--set=HDL_INTERFACE_INSTANCE_PARAMETERS=SYMBOLS_PER_BEAT=D\"4\";BITS_PER_SYMBOL=D\"8\";FIFO_DEPTH=D\"16\";CHANNEL_WIDTH=D\"0\";ERROR_WIDTH=D\"0\";USE_PACKETS=D\"1\";USE_IN_FILL_LEVEL=D\"0\";USE_OUT_FILL_LEVEL=D\"0\";WR_SYNC_DEPTH=D\"2\";RD_SYNC_DEPTH=D\"2\";"
+2014.06.09.14:30:21 [Debug] Command took 0.670s
+2014.06.09.14:30:21 [Info] dc_fifo_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_dc_fifo</b> "<b>dc_fifo_0</b>"
+2014.06.09.14:30:21 [Debug] Proyecto: queue size: 152 starting:altera_avalon_pixel_converter "submodules/altera_avalon_pixel_converter"
+2014.06.09.14:27:51 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:27:51 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_pixel_converter/altera_avalon_pixel_converter.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_pixel_converter/altera_avalon_pixel_converter.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0001_sopcqmap/
+2014.06.09.14:27:52 [Debug] Command took 0.660s
+2014.06.09.14:30:21 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:30:21 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:\altera\11.1sp2\ip\altera\sopc_builder_ip\altera_avalon_pixel_converter\altera_avalon_pixel_converter.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_pixel_converter/altera_avalon_pixel_converter.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0013_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=altera_avalon_pixel_converter "--set=HDL_INTERFACE_INSTANCE_PARAMETERS=SOURCE_SYMBOLS_PER_BEAT=D\"1\";"
+2014.06.09.14:30:22 [Debug] Command took 0.670s
+2014.06.09.14:30:22 [Info] pixel_converter_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_pixel_converter</b> "<b>pixel_converter_0</b>"
+2014.06.09.14:30:22 [Debug] Proyecto: queue size: 151 starting:altera_avalon_video_sync_generator "submodules/altera_avalon_video_sync_generator"
+2014.06.09.14:27:52 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:27:52 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_video_sync_generator/altera_avalon_video_sync_generator.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_video_sync_generator/altera_avalon_video_sync_generator.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0002_sopcqmap/
+2014.06.09.14:27:52 [Debug] Command took 0.660s
+2014.06.09.14:30:22 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:30:22 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:\altera\11.1sp2\ip\altera\sopc_builder_ip\altera_avalon_video_sync_generator\altera_avalon_video_sync_generator.v --source=C:/altera/11.1sp2/ip/altera/sopc_builder_ip/altera_avalon_video_sync_generator/altera_avalon_video_sync_generator.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0014_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=altera_avalon_video_sync_generator "--set=HDL_INTERFACE_INSTANCE_PARAMETERS=DATA_STREAM_BIT_WIDTH=D\"24\";BEATS_PER_PIXEL=D\"1\";NUM_COLUMNS=D\"640\";NUM_ROWS=D\"480\";H_BLANK_PIXELS=D\"144\";H_FRONT_PORCH_PIXELS=D\"16\";H_SYNC_PULSE_PIXELS=D\"96\";H_SYNC_PULSE_POLARITY=D\"0\";V_BLANK_LINES=D\"35\";V_FRONT_PORCH_LINES=D\"10\";V_SYNC_PULSE_LINES=D\"2\";V_SYNC_PULSE_POLARITY=D\"0\";TOTAL_HSCAN_PIXELS=D\"800\";TOTAL_VSCAN_LINES=D\"525\";"
+2014.06.09.14:30:23 [Debug] Command took 0.680s
+2014.06.09.14:30:23 [Info] video_sync_generator_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_video_sync_generator</b> "<b>video_sync_generator_0</b>"
+2014.06.09.14:30:23 [Debug] Proyecto: queue size: 150 starting:altera_avalon_timer "submodules/Proyecto_timer_0"
+2014.06.09.14:30:23 [Info] Starting classic module elaboration.
+2014.06.09.14:30:24 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0015_sopclgen  --no_splash --refresh C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0015_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:26 [Info] Finished elaborating classic module.
+2014.06.09.14:30:26 [Progress] Executing: C:/altera/11.1sp2/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0015_sopclgen/yysystem.ptf
+2014.06.09.14:30:26 [Info] Running sopc_builder...
+2014.06.09.14:30:27 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0015_sopclgen  --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0015_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:28 [Progress] No .sopc_builder configuration file(!)
+2014.06.09.14:30:28 [Progress] .
+2014.06.09.14:30:29 [Progress] # 2014.06.09 14:30:29 (*) Success: sopc_builder finished.
+2014.06.09.14:30:29 [Info] timer_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_timer</b> "<b>timer_0</b>"
+2014.06.09.14:30:29 [Debug] Proyecto: queue size: 149 starting:ps2 "submodules/ps2"
+2014.06.09.14:27:52 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:27:52 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Nueva_carpeta/Proyecto_v3.0/ps2_hw/ps2.vhd --source=C:/Nueva_carpeta/Proyecto_v3.0/ps2_hw/ps2.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0003_sopcqmap/
+2014.06.09.14:27:53 [Debug] Command took 1.070s
+2014.06.09.14:30:29 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:30:29 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:\Nueva_carpeta\Proyecto_v3.0\ps2_hw\ps2.vhd --source=C:/Nueva_carpeta/Proyecto_v3.0/ps2_hw/ps2.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0016_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=ps2 "--set=HDL_INTERFACE_INSTANCE_PARAMETERS=clk_frequency=D\"100000000\";"
+2014.06.09.14:30:30 [Debug] Command took 1.100s
+2014.06.09.14:30:30 [Info] ps2_0: "<b>Proyecto</b>" instantiated <b>ps2</b> "<b>ps2_0</b>"
+2014.06.09.14:30:30 [Debug] Proyecto: queue size: 147 starting:gpu "submodules/gpu"
+2014.06.09.14:27:53 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:27:53 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_sh.exe -t C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0004_sopcqmap/not_a_project_setup.tcl
+2014.06.09.14:27:53 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Nueva_carpeta/Proyecto_v3.0/gpu_hw/gpu.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0004_sopcqmap/
+2014.06.09.14:27:54 [Debug] Command took 0.330s
+2014.06.09.14:27:55 [Debug] Command took 0.950s
+2014.06.09.14:30:30 [Debug] set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files
+2014.06.09.14:30:30 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_sh.exe -t C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0017_sopcqmap/not_a_project_setup.tcl
+2014.06.09.14:30:30 [Debug] Command: C:/altera/11.1sp2/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:\Nueva_carpeta\Proyecto_v3.0\gpu_hw\gpu.vhd --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0017_sopcqmap/ --set=HDL_INTERFACE_INSTANCE_NAME=inst --set=HDL_INTERFACE_INSTANCE_ENTITY=gpu "--set=HDL_INTERFACE_INSTANCE_PARAMETERS=INSTRUCTION_SLAVE_ADDRESS_WIDTH=D\"12\";"
+2014.06.09.14:30:31 [Debug] Command took 0.330s
+2014.06.09.14:30:32 [Debug] Command took 0.960s
+2014.06.09.14:30:32 [Info] gpu_0: "<b>Proyecto</b>" instantiated <b>gpu</b> "<b>gpu_0</b>"
+2014.06.09.14:30:32 [Debug] Proyecto: queue size: 146 starting:altera_avalon_mm_bridge "submodules/altera_avalon_mm_bridge"
+2014.06.09.14:30:32 [Info] mm_bridge_0: "<b>Proyecto</b>" instantiated <b>altera_avalon_mm_bridge</b> "<b>mm_bridge_0</b>"
+2014.06.09.14:30:32 [Debug] Proyecto: queue size: 145 starting:altera_avalon_onchip_memory2 "submodules/Proyecto_onchip_memory2_1"
+2014.06.09.14:30:32 [Info] Starting classic module elaboration.
+2014.06.09.14:30:33 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0018_sopclgen  --no_splash --refresh C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0018_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:35 [Info] Finished elaborating classic module.
+2014.06.09.14:30:35 [Progress] Executing: C:/altera/11.1sp2/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0018_sopclgen/yysystem.ptf
+2014.06.09.14:30:35 [Info] Running sopc_builder...
+2014.06.09.14:30:36 [Progress] "c:/altera/11.1sp2/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/11.1sp2/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/11.1sp2/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0018_sopclgen  --generate C:/Users/admin/AppData/Local/Temp/alt6230_2395904144819646731.dir/0018_sopclgen/yysystem.v --quartus_dir="c:/altera/11.1sp2/quartus" --sopc_perl="c:/altera/11.1sp2/quartus/bin/perl" --sopc_lib_path="++c:/altera/11.1sp2/quartus/../ip/altera/sopc_builder_ip+c:/altera/11.1sp2/quartus/../ip/altera/nios2_ip"
+2014.06.09.14:30:37 [Progress] No .sopc_builder configuration file(!)
+2014.06.09.14:30:37 [Progress] .
+2014.06.09.14:30:38 [Progress] # 2014.06.09 14:30:38 (*) Success: sopc_builder finished.
+2014.06.09.14:30:39 [Info] onchip_memory2_1: "<b>Proyecto</b>" instantiated <b>altera_avalon_onchip_memory2</b> "<b>onchip_memory2_1</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 144 starting:altera_merlin_master_translator "submodules/altera_merlin_master_translator"
+2014.06.09.14:30:39 [Info] nios2_qsys_0_instruction_master_translator: "<b>Proyecto</b>" instantiated <b>altera_merlin_master_translator</b> "<b>nios2_qsys_0_instruction_master_translator</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 139 starting:altera_merlin_slave_translator "submodules/altera_merlin_slave_translator"
+2014.06.09.14:30:39 [Info] nios2_qsys_0_jtag_debug_module_translator: "<b>Proyecto</b>" instantiated <b>altera_merlin_slave_translator</b> "<b>nios2_qsys_0_jtag_debug_module_translator</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 123 starting:altera_merlin_slave_agent "submodules/altera_merlin_slave_agent"
+2014.06.09.14:30:39 [Info] onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent: "<b>Proyecto</b>" instantiated <b>altera_merlin_slave_agent</b> "<b>onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 122 starting:altera_avalon_sc_fifo "submodules/altera_avalon_sc_fifo"
+2014.06.09.14:30:39 [Info] onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "<b>Proyecto</b>" instantiated <b>altera_avalon_sc_fifo</b> "<b>onchip_memory2_1_s1_translator_avalon_universal_slave_0_agent_rsp_fifo</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 120 starting:altera_merlin_master_agent "submodules/altera_merlin_master_agent"
+2014.06.09.14:30:39 [Info] nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "<b>Proyecto</b>" instantiated <b>altera_merlin_master_agent</b> "<b>nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 75 starting:altera_merlin_router "submodules/Proyecto_addr_router"
+2014.06.09.14:30:39 [Info] addr_router: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 74 starting:altera_merlin_router "submodules/Proyecto_addr_router_001"
+2014.06.09.14:30:39 [Info] addr_router_001: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router_001</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 73 starting:altera_merlin_router "submodules/Proyecto_addr_router_002"
+2014.06.09.14:30:39 [Info] addr_router_002: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router_002</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 72 starting:altera_merlin_router "submodules/Proyecto_addr_router_003"
+2014.06.09.14:30:39 [Info] addr_router_003: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router_003</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 70 starting:altera_merlin_router "submodules/Proyecto_id_router"
+2014.06.09.14:30:39 [Info] id_router: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 69 starting:altera_merlin_router "submodules/Proyecto_id_router_001"
+2014.06.09.14:30:39 [Info] id_router_001: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_001</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 68 starting:altera_merlin_router "submodules/Proyecto_id_router_002"
+2014.06.09.14:30:39 [Info] id_router_002: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_002</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 66 starting:altera_merlin_router "submodules/Proyecto_id_router_004"
+2014.06.09.14:30:39 [Info] id_router_004: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_004</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 61 starting:altera_merlin_router "submodules/Proyecto_id_router_009"
+2014.06.09.14:30:39 [Info] id_router_009: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_009</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 58 starting:altera_merlin_router "submodules/Proyecto_id_router_012"
+2014.06.09.14:30:39 [Info] id_router_012: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_012</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 57 starting:altera_merlin_router "submodules/Proyecto_addr_router_005"
+2014.06.09.14:30:39 [Info] addr_router_005: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>addr_router_005</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 55 starting:altera_merlin_router "submodules/Proyecto_id_router_013"
+2014.06.09.14:30:39 [Info] id_router_013: "<b>Proyecto</b>" instantiated <b>altera_merlin_router</b> "<b>id_router_013</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 54 starting:altera_merlin_traffic_limiter "submodules/altera_merlin_traffic_limiter"
+2014.06.09.14:30:39 [Info] limiter: "<b>Proyecto</b>" instantiated <b>altera_merlin_traffic_limiter</b> "<b>limiter</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 51 starting:altera_merlin_burst_adapter "submodules/altera_merlin_burst_adapter"
+2014.06.09.14:30:39 [Info] burst_adapter: "<b>Proyecto</b>" instantiated <b>altera_merlin_burst_adapter</b> "<b>burst_adapter</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 48 starting:altera_reset_controller "submodules/altera_reset_controller"
+2014.06.09.14:30:39 [Info] rst_controller: "<b>Proyecto</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 45 starting:altera_merlin_demultiplexer "submodules/Proyecto_cmd_xbar_demux"
+2014.06.09.14:30:39 [Info] cmd_xbar_demux: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 44 starting:altera_merlin_demultiplexer "submodules/Proyecto_cmd_xbar_demux_001"
+2014.06.09.14:30:39 [Info] cmd_xbar_demux_001: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_001</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 43 starting:altera_merlin_demultiplexer "submodules/Proyecto_cmd_xbar_demux_002"
+2014.06.09.14:30:39 [Info] cmd_xbar_demux_002: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_002</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 42 starting:altera_merlin_demultiplexer "submodules/Proyecto_cmd_xbar_demux_003"
+2014.06.09.14:30:39 [Info] cmd_xbar_demux_003: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_003</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 41 starting:altera_merlin_demultiplexer "submodules/Proyecto_cmd_xbar_demux_004"
+2014.06.09.14:30:39 [Info] cmd_xbar_demux_004: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_004</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 40 starting:altera_merlin_multiplexer "submodules/Proyecto_cmd_xbar_mux"
+2014.06.09.14:30:39 [Info] cmd_xbar_mux: "<b>Proyecto</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_xbar_mux</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 38 starting:altera_merlin_multiplexer "submodules/Proyecto_cmd_xbar_mux_004"
+2014.06.09.14:30:39 [Info] cmd_xbar_mux_004: "<b>Proyecto</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_xbar_mux_004</b>"
+2014.06.09.14:30:39 [Info] Reusing file <b>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 31 starting:altera_merlin_demultiplexer "submodules/Proyecto_rsp_xbar_demux_004"
+2014.06.09.14:30:39 [Info] rsp_xbar_demux_004: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux_004</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 22 starting:altera_merlin_multiplexer "submodules/Proyecto_rsp_xbar_mux"
+2014.06.09.14:30:39 [Info] rsp_xbar_mux: "<b>Proyecto</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux</b>"
+2014.06.09.14:30:39 [Info] Reusing file <b>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 21 starting:altera_merlin_multiplexer "submodules/Proyecto_rsp_xbar_mux_001"
+2014.06.09.14:30:39 [Info] rsp_xbar_mux_001: "<b>Proyecto</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>rsp_xbar_mux_001</b>"
+2014.06.09.14:30:39 [Info] Reusing file <b>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 19 starting:altera_merlin_demultiplexer "submodules/Proyecto_cmd_xbar_demux_005"
+2014.06.09.14:30:39 [Info] cmd_xbar_demux_005: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>cmd_xbar_demux_005</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 17 starting:altera_merlin_multiplexer "submodules/Proyecto_cmd_xbar_mux_013"
+2014.06.09.14:30:39 [Info] cmd_xbar_mux_013: "<b>Proyecto</b>" instantiated <b>altera_merlin_multiplexer</b> "<b>cmd_xbar_mux_013</b>"
+2014.06.09.14:30:39 [Info] Reusing file <b>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_arbitrator.sv</b>
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 16 starting:altera_merlin_demultiplexer "submodules/Proyecto_rsp_xbar_demux_013"
+2014.06.09.14:30:39 [Info] rsp_xbar_demux_013: "<b>Proyecto</b>" instantiated <b>altera_merlin_demultiplexer</b> "<b>rsp_xbar_demux_013</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 15 starting:altera_merlin_width_adapter "submodules/altera_merlin_width_adapter"
+2014.06.09.14:30:39 [Info] width_adapter: "<b>Proyecto</b>" instantiated <b>altera_merlin_width_adapter</b> "<b>width_adapter</b>"
+2014.06.09.14:30:39 [Info] Reusing file <b>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_merlin_burst_uncompressor.sv</b>
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 9 starting:altera_avalon_st_handshake_clock_crosser "submodules/altera_avalon_st_handshake_clock_crosser"
+2014.06.09.14:30:39 [Info] crosser: "<b>Proyecto</b>" instantiated <b>altera_avalon_st_handshake_clock_crosser</b> "<b>crosser</b>"
+2014.06.09.14:30:39 [Info] Reusing file <b>C:/Nueva_carpeta/Proyecto_v3.0/Proyecto/synthesis/submodules/altera_avalon_st_pipeline_base.v</b>
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 1 starting:altera_irq_mapper "submodules/Proyecto_irq_mapper"
+2014.06.09.14:30:39 [Info] irq_mapper: "<b>Proyecto</b>" instantiated <b>altera_irq_mapper</b> "<b>irq_mapper</b>"
+2014.06.09.14:30:39 [Debug] Proyecto: queue size: 0 starting:altera_irq_clock_crosser "submodules/altera_irq_clock_crosser"
+2014.06.09.14:30:39 [Info] irq_synchronizer: "<b>Proyecto</b>" instantiated <b>altera_irq_clock_crosser</b> "<b>irq_synchronizer</b>"
+2014.06.09.14:30:39 [Info] Proyecto: Done <b>Proyecto</b>" with 52 modules, 250 files, 4349584 bytes
+</div>
+  <div style="width:100% ; background:#eee ; height:10px"> </div>
+ </body>
+</html>

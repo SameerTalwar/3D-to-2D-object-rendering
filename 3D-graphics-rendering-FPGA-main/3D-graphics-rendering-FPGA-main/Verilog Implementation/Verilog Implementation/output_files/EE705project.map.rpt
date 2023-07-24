@@ -1,0 +1,1076 @@
+Analysis & Synthesis report for EE705project
+Thu Jun 02 20:37:30 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: VGA:VGAdriver
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Jun 02 20:37:30 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; EE705project                                ;
+; Top-level Entity Name              ; main                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 33                                          ;
+;     Total combinational functions  ; 33                                          ;
+;     Dedicated logic registers      ; 20                                          ;
+; Total registers                    ; 20                                          ;
+; Total pins                         ; 112                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; main               ; EE705project       ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                   ;
++----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                   ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------------------+---------+
+; VGA.v                            ; yes             ; User Verilog HDL File                       ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v              ;         ;
+; sine.v                           ; yes             ; User Verilog HDL File                       ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v             ;         ;
+; cosine.v                         ; yes             ; User Verilog HDL File                       ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v           ;         ;
+; main.v                           ; yes             ; User Verilog HDL File                       ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v             ;         ;
+; sin_table_64x8.hex               ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sin_table_64x8.hex ;         ;
+; faces.hex                        ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/faces.hex          ;         ;
+; vertices.hex                     ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/vertices.hex       ;         ;
+; cos_table_64x8.hex               ; yes             ; Auto-Found Hexadecimal (Intel-Format) File  ; C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cos_table_64x8.hex ;         ;
++----------------------------------+-----------------+---------------------------------------------+---------------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimated Total logic elements              ; 33                         ;
+;                                             ;                            ;
+; Total combinational functions               ; 33                         ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 10                         ;
+;     -- 3 input functions                    ; 1                          ;
+;     -- <=2 input functions                  ; 22                         ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 15                         ;
+;     -- arithmetic mode                      ; 18                         ;
+;                                             ;                            ;
+; Total registers                             ; 20                         ;
+;     -- Dedicated logic registers            ; 20                         ;
+;     -- I/O registers                        ; 0                          ;
+;                                             ;                            ;
+; I/O pins                                    ; 112                        ;
+;                                             ;                            ;
+; Embedded Multiplier 9-bit elements          ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; VGA:VGAdriver|hcount[0]~12 ;
+; Maximum fan-out                             ; 20                         ;
+; Total fan-out                               ; 270                        ;
+; Average fan-out                             ; 0.97                       ;
++---------------------------------------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |main                      ; 33 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 112  ; 0            ; |main               ; main        ; work         ;
+;    |VGA:VGAdriver|         ; 33 (33)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|VGA:VGAdriver ; VGA         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                               ;
++-----------------------------------------+----------------------------------------+
+; Register name                           ; Reason for Removal                     ;
++-----------------------------------------+----------------------------------------+
+; Xin[0..31]                              ; Stuck at GND due to stuck port data_in ;
+; VGA:VGAdriver|RGV[1..3]                 ; Stuck at GND due to stuck port data_in ;
+; pixel_buffer[19][19]                    ; Lost fanout                            ;
+; pixel_buffer[19][18]                    ; Lost fanout                            ;
+; pixel_buffer[19][17]                    ; Lost fanout                            ;
+; pixel_buffer[19][16]                    ; Lost fanout                            ;
+; pixel_buffer[19][15]                    ; Lost fanout                            ;
+; pixel_buffer[19][14]                    ; Lost fanout                            ;
+; pixel_buffer[19][13]                    ; Lost fanout                            ;
+; pixel_buffer[19][12]                    ; Lost fanout                            ;
+; pixel_buffer[19][11]                    ; Lost fanout                            ;
+; pixel_buffer[19][10]                    ; Lost fanout                            ;
+; pixel_buffer[19][9]                     ; Lost fanout                            ;
+; pixel_buffer[19][8]                     ; Lost fanout                            ;
+; pixel_buffer[19][7]                     ; Lost fanout                            ;
+; pixel_buffer[19][6]                     ; Lost fanout                            ;
+; pixel_buffer[19][5]                     ; Lost fanout                            ;
+; pixel_buffer[19][4]                     ; Lost fanout                            ;
+; pixel_buffer[19][3]                     ; Lost fanout                            ;
+; pixel_buffer[19][2]                     ; Lost fanout                            ;
+; pixel_buffer[19][1]                     ; Lost fanout                            ;
+; pixel_buffer[18][19]                    ; Lost fanout                            ;
+; pixel_buffer[18][18]                    ; Lost fanout                            ;
+; pixel_buffer[18][17]                    ; Lost fanout                            ;
+; pixel_buffer[18][16]                    ; Lost fanout                            ;
+; pixel_buffer[18][15]                    ; Lost fanout                            ;
+; pixel_buffer[18][14]                    ; Lost fanout                            ;
+; pixel_buffer[18][13]                    ; Lost fanout                            ;
+; pixel_buffer[18][12]                    ; Lost fanout                            ;
+; pixel_buffer[18][11]                    ; Lost fanout                            ;
+; pixel_buffer[18][10]                    ; Lost fanout                            ;
+; pixel_buffer[18][9]                     ; Lost fanout                            ;
+; pixel_buffer[18][8]                     ; Lost fanout                            ;
+; pixel_buffer[18][7]                     ; Lost fanout                            ;
+; pixel_buffer[18][6]                     ; Lost fanout                            ;
+; pixel_buffer[18][5]                     ; Lost fanout                            ;
+; pixel_buffer[18][4]                     ; Lost fanout                            ;
+; pixel_buffer[18][3]                     ; Lost fanout                            ;
+; pixel_buffer[18][2]                     ; Lost fanout                            ;
+; pixel_buffer[18][1]                     ; Lost fanout                            ;
+; pixel_buffer[17][19]                    ; Lost fanout                            ;
+; pixel_buffer[17][18]                    ; Lost fanout                            ;
+; pixel_buffer[17][17]                    ; Lost fanout                            ;
+; pixel_buffer[17][16]                    ; Lost fanout                            ;
+; pixel_buffer[17][15]                    ; Lost fanout                            ;
+; pixel_buffer[17][14]                    ; Lost fanout                            ;
+; pixel_buffer[17][13]                    ; Lost fanout                            ;
+; pixel_buffer[17][12]                    ; Lost fanout                            ;
+; pixel_buffer[17][11]                    ; Lost fanout                            ;
+; pixel_buffer[17][10]                    ; Lost fanout                            ;
+; pixel_buffer[17][9]                     ; Lost fanout                            ;
+; pixel_buffer[17][8]                     ; Lost fanout                            ;
+; pixel_buffer[17][7]                     ; Lost fanout                            ;
+; pixel_buffer[17][6]                     ; Lost fanout                            ;
+; pixel_buffer[17][5]                     ; Lost fanout                            ;
+; pixel_buffer[17][4]                     ; Lost fanout                            ;
+; pixel_buffer[17][3]                     ; Lost fanout                            ;
+; pixel_buffer[17][2]                     ; Lost fanout                            ;
+; pixel_buffer[17][1]                     ; Lost fanout                            ;
+; pixel_buffer[16][19]                    ; Lost fanout                            ;
+; pixel_buffer[16][18]                    ; Lost fanout                            ;
+; pixel_buffer[16][17]                    ; Lost fanout                            ;
+; pixel_buffer[16][16]                    ; Lost fanout                            ;
+; pixel_buffer[16][15]                    ; Lost fanout                            ;
+; pixel_buffer[16][14]                    ; Lost fanout                            ;
+; pixel_buffer[16][13]                    ; Lost fanout                            ;
+; pixel_buffer[16][12]                    ; Lost fanout                            ;
+; pixel_buffer[16][11]                    ; Lost fanout                            ;
+; pixel_buffer[16][10]                    ; Lost fanout                            ;
+; pixel_buffer[16][9]                     ; Lost fanout                            ;
+; pixel_buffer[16][8]                     ; Lost fanout                            ;
+; pixel_buffer[16][7]                     ; Lost fanout                            ;
+; pixel_buffer[16][6]                     ; Lost fanout                            ;
+; pixel_buffer[16][5]                     ; Lost fanout                            ;
+; pixel_buffer[16][4]                     ; Lost fanout                            ;
+; pixel_buffer[16][3]                     ; Lost fanout                            ;
+; pixel_buffer[16][2]                     ; Lost fanout                            ;
+; pixel_buffer[16][1]                     ; Lost fanout                            ;
+; pixel_buffer[15][19]                    ; Lost fanout                            ;
+; pixel_buffer[15][18]                    ; Lost fanout                            ;
+; pixel_buffer[15][17]                    ; Lost fanout                            ;
+; pixel_buffer[15][16]                    ; Lost fanout                            ;
+; pixel_buffer[15][15]                    ; Lost fanout                            ;
+; pixel_buffer[15][14]                    ; Lost fanout                            ;
+; pixel_buffer[15][13]                    ; Lost fanout                            ;
+; pixel_buffer[15][12]                    ; Lost fanout                            ;
+; pixel_buffer[15][11]                    ; Lost fanout                            ;
+; pixel_buffer[15][10]                    ; Lost fanout                            ;
+; pixel_buffer[15][9]                     ; Lost fanout                            ;
+; pixel_buffer[15][8]                     ; Lost fanout                            ;
+; pixel_buffer[15][7]                     ; Lost fanout                            ;
+; pixel_buffer[15][6]                     ; Lost fanout                            ;
+; pixel_buffer[15][5]                     ; Lost fanout                            ;
+; pixel_buffer[15][4]                     ; Lost fanout                            ;
+; pixel_buffer[15][3]                     ; Lost fanout                            ;
+; pixel_buffer[15][2]                     ; Lost fanout                            ;
+; pixel_buffer[15][1]                     ; Lost fanout                            ;
+; pixel_buffer[14][19]                    ; Lost fanout                            ;
+; pixel_buffer[14][18]                    ; Lost fanout                            ;
+; pixel_buffer[14][17]                    ; Lost fanout                            ;
+; pixel_buffer[14][16]                    ; Lost fanout                            ;
+; pixel_buffer[14][15]                    ; Lost fanout                            ;
+; pixel_buffer[14][14]                    ; Lost fanout                            ;
+; pixel_buffer[14][13]                    ; Lost fanout                            ;
+; pixel_buffer[14][12]                    ; Lost fanout                            ;
+; pixel_buffer[14][11]                    ; Lost fanout                            ;
+; pixel_buffer[14][10]                    ; Lost fanout                            ;
+; pixel_buffer[14][9]                     ; Lost fanout                            ;
+; pixel_buffer[14][8]                     ; Lost fanout                            ;
+; pixel_buffer[14][7]                     ; Lost fanout                            ;
+; pixel_buffer[14][6]                     ; Lost fanout                            ;
+; pixel_buffer[14][5]                     ; Lost fanout                            ;
+; pixel_buffer[14][4]                     ; Lost fanout                            ;
+; pixel_buffer[14][3]                     ; Lost fanout                            ;
+; pixel_buffer[14][2]                     ; Lost fanout                            ;
+; pixel_buffer[14][1]                     ; Lost fanout                            ;
+; pixel_buffer[13][19]                    ; Lost fanout                            ;
+; pixel_buffer[13][18]                    ; Lost fanout                            ;
+; pixel_buffer[13][17]                    ; Lost fanout                            ;
+; pixel_buffer[13][16]                    ; Lost fanout                            ;
+; pixel_buffer[13][15]                    ; Lost fanout                            ;
+; pixel_buffer[13][14]                    ; Lost fanout                            ;
+; pixel_buffer[13][13]                    ; Lost fanout                            ;
+; pixel_buffer[13][12]                    ; Lost fanout                            ;
+; pixel_buffer[13][11]                    ; Lost fanout                            ;
+; pixel_buffer[13][10]                    ; Lost fanout                            ;
+; pixel_buffer[13][9]                     ; Lost fanout                            ;
+; pixel_buffer[13][8]                     ; Lost fanout                            ;
+; pixel_buffer[13][7]                     ; Lost fanout                            ;
+; pixel_buffer[13][6]                     ; Lost fanout                            ;
+; pixel_buffer[13][5]                     ; Lost fanout                            ;
+; pixel_buffer[13][4]                     ; Lost fanout                            ;
+; pixel_buffer[13][3]                     ; Lost fanout                            ;
+; pixel_buffer[13][2]                     ; Lost fanout                            ;
+; pixel_buffer[13][1]                     ; Lost fanout                            ;
+; pixel_buffer[12][19]                    ; Lost fanout                            ;
+; pixel_buffer[12][18]                    ; Lost fanout                            ;
+; pixel_buffer[12][17]                    ; Lost fanout                            ;
+; pixel_buffer[12][16]                    ; Lost fanout                            ;
+; pixel_buffer[12][15]                    ; Lost fanout                            ;
+; pixel_buffer[12][14]                    ; Lost fanout                            ;
+; pixel_buffer[12][13]                    ; Lost fanout                            ;
+; pixel_buffer[12][12]                    ; Lost fanout                            ;
+; pixel_buffer[12][11]                    ; Lost fanout                            ;
+; pixel_buffer[12][10]                    ; Lost fanout                            ;
+; pixel_buffer[12][9]                     ; Lost fanout                            ;
+; pixel_buffer[12][8]                     ; Lost fanout                            ;
+; pixel_buffer[12][7]                     ; Lost fanout                            ;
+; pixel_buffer[12][6]                     ; Lost fanout                            ;
+; pixel_buffer[12][5]                     ; Lost fanout                            ;
+; pixel_buffer[12][4]                     ; Lost fanout                            ;
+; pixel_buffer[12][3]                     ; Lost fanout                            ;
+; pixel_buffer[12][2]                     ; Lost fanout                            ;
+; pixel_buffer[12][1]                     ; Lost fanout                            ;
+; pixel_buffer[11][19]                    ; Lost fanout                            ;
+; pixel_buffer[11][18]                    ; Lost fanout                            ;
+; pixel_buffer[11][17]                    ; Lost fanout                            ;
+; pixel_buffer[11][16]                    ; Lost fanout                            ;
+; pixel_buffer[11][15]                    ; Lost fanout                            ;
+; pixel_buffer[11][14]                    ; Lost fanout                            ;
+; pixel_buffer[11][13]                    ; Lost fanout                            ;
+; pixel_buffer[11][12]                    ; Lost fanout                            ;
+; pixel_buffer[11][11]                    ; Lost fanout                            ;
+; pixel_buffer[11][10]                    ; Lost fanout                            ;
+; pixel_buffer[11][9]                     ; Lost fanout                            ;
+; pixel_buffer[11][8]                     ; Lost fanout                            ;
+; pixel_buffer[11][7]                     ; Lost fanout                            ;
+; pixel_buffer[11][6]                     ; Lost fanout                            ;
+; pixel_buffer[11][5]                     ; Lost fanout                            ;
+; pixel_buffer[11][4]                     ; Lost fanout                            ;
+; pixel_buffer[11][3]                     ; Lost fanout                            ;
+; pixel_buffer[11][2]                     ; Lost fanout                            ;
+; pixel_buffer[11][1]                     ; Lost fanout                            ;
+; pixel_buffer[10][19]                    ; Lost fanout                            ;
+; pixel_buffer[10][18]                    ; Lost fanout                            ;
+; pixel_buffer[10][17]                    ; Lost fanout                            ;
+; pixel_buffer[10][16]                    ; Lost fanout                            ;
+; pixel_buffer[10][15]                    ; Lost fanout                            ;
+; pixel_buffer[10][14]                    ; Lost fanout                            ;
+; pixel_buffer[10][13]                    ; Lost fanout                            ;
+; pixel_buffer[10][12]                    ; Lost fanout                            ;
+; pixel_buffer[10][11]                    ; Lost fanout                            ;
+; pixel_buffer[10][10]                    ; Lost fanout                            ;
+; pixel_buffer[10][9]                     ; Lost fanout                            ;
+; pixel_buffer[10][8]                     ; Lost fanout                            ;
+; pixel_buffer[10][7]                     ; Lost fanout                            ;
+; pixel_buffer[10][6]                     ; Lost fanout                            ;
+; pixel_buffer[10][5]                     ; Lost fanout                            ;
+; pixel_buffer[10][4]                     ; Lost fanout                            ;
+; pixel_buffer[10][3]                     ; Lost fanout                            ;
+; pixel_buffer[10][2]                     ; Lost fanout                            ;
+; pixel_buffer[10][1]                     ; Lost fanout                            ;
+; pixel_buffer[9][19]                     ; Lost fanout                            ;
+; pixel_buffer[9][18]                     ; Lost fanout                            ;
+; pixel_buffer[9][17]                     ; Lost fanout                            ;
+; pixel_buffer[9][16]                     ; Lost fanout                            ;
+; pixel_buffer[9][15]                     ; Lost fanout                            ;
+; pixel_buffer[9][14]                     ; Lost fanout                            ;
+; pixel_buffer[9][13]                     ; Lost fanout                            ;
+; pixel_buffer[9][12]                     ; Lost fanout                            ;
+; pixel_buffer[9][11]                     ; Lost fanout                            ;
+; pixel_buffer[9][10]                     ; Lost fanout                            ;
+; pixel_buffer[9][9]                      ; Lost fanout                            ;
+; pixel_buffer[9][8]                      ; Lost fanout                            ;
+; pixel_buffer[9][7]                      ; Lost fanout                            ;
+; pixel_buffer[9][6]                      ; Lost fanout                            ;
+; pixel_buffer[9][5]                      ; Lost fanout                            ;
+; pixel_buffer[9][4]                      ; Lost fanout                            ;
+; pixel_buffer[9][3]                      ; Lost fanout                            ;
+; pixel_buffer[9][2]                      ; Lost fanout                            ;
+; pixel_buffer[9][1]                      ; Lost fanout                            ;
+; pixel_buffer[8][19]                     ; Lost fanout                            ;
+; pixel_buffer[8][18]                     ; Lost fanout                            ;
+; pixel_buffer[8][17]                     ; Lost fanout                            ;
+; pixel_buffer[8][16]                     ; Lost fanout                            ;
+; pixel_buffer[8][15]                     ; Lost fanout                            ;
+; pixel_buffer[8][14]                     ; Lost fanout                            ;
+; pixel_buffer[8][13]                     ; Lost fanout                            ;
+; pixel_buffer[8][12]                     ; Lost fanout                            ;
+; pixel_buffer[8][11]                     ; Lost fanout                            ;
+; pixel_buffer[8][10]                     ; Lost fanout                            ;
+; pixel_buffer[8][9]                      ; Lost fanout                            ;
+; pixel_buffer[8][8]                      ; Lost fanout                            ;
+; pixel_buffer[8][7]                      ; Lost fanout                            ;
+; pixel_buffer[8][6]                      ; Lost fanout                            ;
+; pixel_buffer[8][5]                      ; Lost fanout                            ;
+; pixel_buffer[8][4]                      ; Lost fanout                            ;
+; pixel_buffer[8][3]                      ; Lost fanout                            ;
+; pixel_buffer[8][2]                      ; Lost fanout                            ;
+; pixel_buffer[8][1]                      ; Lost fanout                            ;
+; pixel_buffer[7][19]                     ; Lost fanout                            ;
+; pixel_buffer[7][18]                     ; Lost fanout                            ;
+; pixel_buffer[7][17]                     ; Lost fanout                            ;
+; pixel_buffer[7][16]                     ; Lost fanout                            ;
+; pixel_buffer[7][15]                     ; Lost fanout                            ;
+; pixel_buffer[7][14]                     ; Lost fanout                            ;
+; pixel_buffer[7][13]                     ; Lost fanout                            ;
+; pixel_buffer[7][12]                     ; Lost fanout                            ;
+; pixel_buffer[7][11]                     ; Lost fanout                            ;
+; pixel_buffer[7][10]                     ; Lost fanout                            ;
+; pixel_buffer[7][9]                      ; Lost fanout                            ;
+; pixel_buffer[7][8]                      ; Lost fanout                            ;
+; pixel_buffer[7][7]                      ; Lost fanout                            ;
+; pixel_buffer[7][6]                      ; Lost fanout                            ;
+; pixel_buffer[7][5]                      ; Lost fanout                            ;
+; pixel_buffer[7][4]                      ; Lost fanout                            ;
+; pixel_buffer[7][3]                      ; Lost fanout                            ;
+; pixel_buffer[7][2]                      ; Lost fanout                            ;
+; pixel_buffer[7][1]                      ; Lost fanout                            ;
+; pixel_buffer[6][19]                     ; Lost fanout                            ;
+; pixel_buffer[6][18]                     ; Lost fanout                            ;
+; pixel_buffer[6][17]                     ; Lost fanout                            ;
+; pixel_buffer[6][16]                     ; Lost fanout                            ;
+; pixel_buffer[6][15]                     ; Lost fanout                            ;
+; pixel_buffer[6][14]                     ; Lost fanout                            ;
+; pixel_buffer[6][13]                     ; Lost fanout                            ;
+; pixel_buffer[6][12]                     ; Lost fanout                            ;
+; pixel_buffer[6][11]                     ; Lost fanout                            ;
+; pixel_buffer[6][10]                     ; Lost fanout                            ;
+; pixel_buffer[6][9]                      ; Lost fanout                            ;
+; pixel_buffer[6][8]                      ; Lost fanout                            ;
+; pixel_buffer[6][7]                      ; Lost fanout                            ;
+; pixel_buffer[6][6]                      ; Lost fanout                            ;
+; pixel_buffer[6][5]                      ; Lost fanout                            ;
+; pixel_buffer[6][4]                      ; Lost fanout                            ;
+; pixel_buffer[6][3]                      ; Lost fanout                            ;
+; pixel_buffer[6][2]                      ; Lost fanout                            ;
+; pixel_buffer[6][1]                      ; Lost fanout                            ;
+; pixel_buffer[5][19]                     ; Lost fanout                            ;
+; pixel_buffer[5][18]                     ; Lost fanout                            ;
+; pixel_buffer[5][17]                     ; Lost fanout                            ;
+; pixel_buffer[5][16]                     ; Lost fanout                            ;
+; pixel_buffer[5][15]                     ; Lost fanout                            ;
+; pixel_buffer[5][14]                     ; Lost fanout                            ;
+; pixel_buffer[5][13]                     ; Lost fanout                            ;
+; pixel_buffer[5][12]                     ; Lost fanout                            ;
+; pixel_buffer[5][11]                     ; Lost fanout                            ;
+; pixel_buffer[5][10]                     ; Lost fanout                            ;
+; pixel_buffer[5][9]                      ; Lost fanout                            ;
+; pixel_buffer[5][8]                      ; Lost fanout                            ;
+; pixel_buffer[5][7]                      ; Lost fanout                            ;
+; pixel_buffer[5][6]                      ; Lost fanout                            ;
+; pixel_buffer[5][5]                      ; Lost fanout                            ;
+; pixel_buffer[5][4]                      ; Lost fanout                            ;
+; pixel_buffer[5][3]                      ; Lost fanout                            ;
+; pixel_buffer[5][2]                      ; Lost fanout                            ;
+; pixel_buffer[5][1]                      ; Lost fanout                            ;
+; pixel_buffer[4][19]                     ; Lost fanout                            ;
+; pixel_buffer[4][18]                     ; Lost fanout                            ;
+; pixel_buffer[4][17]                     ; Lost fanout                            ;
+; pixel_buffer[4][16]                     ; Lost fanout                            ;
+; pixel_buffer[4][15]                     ; Lost fanout                            ;
+; pixel_buffer[4][14]                     ; Lost fanout                            ;
+; pixel_buffer[4][13]                     ; Lost fanout                            ;
+; pixel_buffer[4][12]                     ; Lost fanout                            ;
+; pixel_buffer[4][11]                     ; Lost fanout                            ;
+; pixel_buffer[4][10]                     ; Lost fanout                            ;
+; pixel_buffer[4][9]                      ; Lost fanout                            ;
+; pixel_buffer[4][8]                      ; Lost fanout                            ;
+; pixel_buffer[4][7]                      ; Lost fanout                            ;
+; pixel_buffer[4][6]                      ; Lost fanout                            ;
+; pixel_buffer[4][5]                      ; Lost fanout                            ;
+; pixel_buffer[4][4]                      ; Lost fanout                            ;
+; pixel_buffer[4][3]                      ; Lost fanout                            ;
+; pixel_buffer[4][2]                      ; Lost fanout                            ;
+; pixel_buffer[4][1]                      ; Lost fanout                            ;
+; pixel_buffer[3][19]                     ; Lost fanout                            ;
+; pixel_buffer[3][18]                     ; Lost fanout                            ;
+; pixel_buffer[3][17]                     ; Lost fanout                            ;
+; pixel_buffer[3][16]                     ; Lost fanout                            ;
+; pixel_buffer[3][15]                     ; Lost fanout                            ;
+; pixel_buffer[3][14]                     ; Lost fanout                            ;
+; pixel_buffer[3][13]                     ; Lost fanout                            ;
+; pixel_buffer[3][12]                     ; Lost fanout                            ;
+; pixel_buffer[3][11]                     ; Lost fanout                            ;
+; pixel_buffer[3][10]                     ; Lost fanout                            ;
+; pixel_buffer[3][9]                      ; Lost fanout                            ;
+; pixel_buffer[3][8]                      ; Lost fanout                            ;
+; pixel_buffer[3][7]                      ; Lost fanout                            ;
+; pixel_buffer[3][6]                      ; Lost fanout                            ;
+; pixel_buffer[3][5]                      ; Lost fanout                            ;
+; pixel_buffer[3][4]                      ; Lost fanout                            ;
+; pixel_buffer[3][3]                      ; Lost fanout                            ;
+; pixel_buffer[3][2]                      ; Lost fanout                            ;
+; pixel_buffer[3][1]                      ; Lost fanout                            ;
+; pixel_buffer[2][19]                     ; Lost fanout                            ;
+; pixel_buffer[2][18]                     ; Lost fanout                            ;
+; pixel_buffer[2][17]                     ; Lost fanout                            ;
+; pixel_buffer[2][16]                     ; Lost fanout                            ;
+; pixel_buffer[2][15]                     ; Lost fanout                            ;
+; pixel_buffer[2][14]                     ; Lost fanout                            ;
+; pixel_buffer[2][13]                     ; Lost fanout                            ;
+; pixel_buffer[2][12]                     ; Lost fanout                            ;
+; pixel_buffer[2][11]                     ; Lost fanout                            ;
+; pixel_buffer[2][10]                     ; Lost fanout                            ;
+; pixel_buffer[2][9]                      ; Lost fanout                            ;
+; pixel_buffer[2][8]                      ; Lost fanout                            ;
+; pixel_buffer[2][7]                      ; Lost fanout                            ;
+; pixel_buffer[2][6]                      ; Lost fanout                            ;
+; pixel_buffer[2][5]                      ; Lost fanout                            ;
+; pixel_buffer[2][4]                      ; Lost fanout                            ;
+; pixel_buffer[2][3]                      ; Lost fanout                            ;
+; pixel_buffer[2][2]                      ; Lost fanout                            ;
+; pixel_buffer[2][1]                      ; Lost fanout                            ;
+; pixel_buffer[1][19]                     ; Lost fanout                            ;
+; pixel_buffer[1][18]                     ; Lost fanout                            ;
+; pixel_buffer[1][17]                     ; Lost fanout                            ;
+; pixel_buffer[1][16]                     ; Lost fanout                            ;
+; pixel_buffer[1][15]                     ; Lost fanout                            ;
+; pixel_buffer[1][14]                     ; Lost fanout                            ;
+; pixel_buffer[1][13]                     ; Lost fanout                            ;
+; pixel_buffer[1][12]                     ; Lost fanout                            ;
+; pixel_buffer[1][11]                     ; Lost fanout                            ;
+; pixel_buffer[1][10]                     ; Lost fanout                            ;
+; pixel_buffer[1][9]                      ; Lost fanout                            ;
+; pixel_buffer[1][8]                      ; Lost fanout                            ;
+; pixel_buffer[1][7]                      ; Lost fanout                            ;
+; pixel_buffer[1][6]                      ; Lost fanout                            ;
+; pixel_buffer[1][5]                      ; Lost fanout                            ;
+; pixel_buffer[1][4]                      ; Lost fanout                            ;
+; pixel_buffer[1][3]                      ; Lost fanout                            ;
+; pixel_buffer[1][2]                      ; Lost fanout                            ;
+; pixel_buffer[1][1]                      ; Lost fanout                            ;
+; pixel_buffer[0][19]                     ; Lost fanout                            ;
+; pixel_buffer[0][18]                     ; Lost fanout                            ;
+; pixel_buffer[0][17]                     ; Lost fanout                            ;
+; pixel_buffer[0][16]                     ; Lost fanout                            ;
+; pixel_buffer[0][15]                     ; Lost fanout                            ;
+; pixel_buffer[0][14]                     ; Lost fanout                            ;
+; pixel_buffer[0][13]                     ; Lost fanout                            ;
+; pixel_buffer[0][12]                     ; Lost fanout                            ;
+; pixel_buffer[0][11]                     ; Lost fanout                            ;
+; pixel_buffer[0][10]                     ; Lost fanout                            ;
+; pixel_buffer[0][9]                      ; Lost fanout                            ;
+; pixel_buffer[0][8]                      ; Lost fanout                            ;
+; pixel_buffer[0][7]                      ; Lost fanout                            ;
+; pixel_buffer[0][6]                      ; Lost fanout                            ;
+; pixel_buffer[0][5]                      ; Lost fanout                            ;
+; pixel_buffer[0][4]                      ; Lost fanout                            ;
+; pixel_buffer[0][3]                      ; Lost fanout                            ;
+; pixel_buffer[0][2]                      ; Lost fanout                            ;
+; pixel_buffer[0][1]                      ; Lost fanout                            ;
+; helper_point[1][15]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][14]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][13]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][12]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][11]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][10]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][9]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][8]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][7]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][6]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][5]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][4]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][3]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][2]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][1]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[1][0]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][15]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][14]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][13]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][12]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][11]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][10]                     ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][9]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][8]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][7]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][6]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][5]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][4]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][3]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][2]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][1]                      ; Stuck at GND due to stuck port data_in ;
+; helper_point[0][0]                      ; Stuck at GND due to stuck port data_in ;
+; Yin[0..31]                              ; Stuck at GND due to stuck port data_in ;
+; pixel_buffer[0][0]                      ; Lost fanout                            ;
+; VGA:VGAdriver|RGV[0,4..7]               ; Stuck at GND due to stuck port data_in ;
+; vertices[0][0][15]                      ; Lost fanout                            ;
+; vertices[0][0][14]                      ; Lost fanout                            ;
+; vertices[0][0][13]                      ; Lost fanout                            ;
+; vertices[0][0][12]                      ; Lost fanout                            ;
+; vertices[0][0][11]                      ; Lost fanout                            ;
+; vertices[0][0][10]                      ; Lost fanout                            ;
+; vertices[0][0][9]                       ; Lost fanout                            ;
+; vertices[0][0][8]                       ; Lost fanout                            ;
+; vertices[0][0][7]                       ; Lost fanout                            ;
+; vertices[0][0][6]                       ; Lost fanout                            ;
+; vertices[0][0][5]                       ; Lost fanout                            ;
+; vertices[0][0][4]                       ; Lost fanout                            ;
+; vertices[0][0][3]                       ; Lost fanout                            ;
+; vertices[0][0][2]                       ; Lost fanout                            ;
+; vertices[0][0][1]                       ; Lost fanout                            ;
+; vertices[0][0][0]                       ; Lost fanout                            ;
+; vertices[0][1][0]                       ; Lost fanout                            ;
+; vertices[0][1][1]                       ; Lost fanout                            ;
+; vertices[0][1][2]                       ; Lost fanout                            ;
+; vertices[0][1][3]                       ; Lost fanout                            ;
+; vertices[0][1][4]                       ; Lost fanout                            ;
+; vertices[0][1][5]                       ; Lost fanout                            ;
+; vertices[0][1][6]                       ; Lost fanout                            ;
+; vertices[0][1][7]                       ; Lost fanout                            ;
+; vertices[0][1][8]                       ; Lost fanout                            ;
+; vertices[0][1][9]                       ; Lost fanout                            ;
+; vertices[0][1][10]                      ; Lost fanout                            ;
+; vertices[0][1][11]                      ; Lost fanout                            ;
+; vertices[0][1][12]                      ; Lost fanout                            ;
+; vertices[0][1][13]                      ; Lost fanout                            ;
+; vertices[0][1][14]                      ; Lost fanout                            ;
+; vertices[0][1][15]                      ; Lost fanout                            ;
+; vertices[0][2][15]                      ; Lost fanout                            ;
+; vertices[0][2][14]                      ; Lost fanout                            ;
+; vertices[0][2][13]                      ; Lost fanout                            ;
+; vertices[0][2][12]                      ; Lost fanout                            ;
+; vertices[0][2][11]                      ; Lost fanout                            ;
+; vertices[0][2][10]                      ; Lost fanout                            ;
+; vertices[0][2][9]                       ; Lost fanout                            ;
+; vertices[0][2][8]                       ; Lost fanout                            ;
+; vertices[0][2][7]                       ; Lost fanout                            ;
+; vertices[0][2][6]                       ; Lost fanout                            ;
+; vertices[0][2][5]                       ; Lost fanout                            ;
+; vertices[0][2][4]                       ; Lost fanout                            ;
+; vertices[0][2][3]                       ; Lost fanout                            ;
+; vertices[0][2][2]                       ; Lost fanout                            ;
+; vertices[0][2][1]                       ; Lost fanout                            ;
+; vertices[0][2][0]                       ; Lost fanout                            ;
+; Total Number of Removed Registers = 533 ;                                        ;
++-----------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                     ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                              ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------------------+
+; Xin[31]       ; Stuck at GND              ; Yin[31], Yin[30], Yin[29], Yin[28], Yin[27], Yin[26], Yin[25], Yin[24], Yin[23], Yin[22], Yin[21],  ;
+;               ; due to stuck port data_in ; Yin[20], Yin[19], Yin[18], Yin[17], Yin[16], Yin[15], Yin[14], Yin[13], Yin[12], Yin[11], Yin[10],  ;
+;               ;                           ; Yin[9], Yin[8], Yin[7], Yin[6], Yin[5], Yin[4], Yin[3], Yin[2], Yin[1], Yin[0], pixel_buffer[0][0], ;
+;               ;                           ; vertices[0][0][15], vertices[0][1][0], vertices[0][1][15]                                           ;
+; Xin[4]        ; Stuck at GND              ; VGA:VGAdriver|RGV[5], VGA:VGAdriver|RGV[6], VGA:VGAdriver|RGV[7], VGA:VGAdriver|RGV[4],             ;
+;               ; due to stuck port data_in ; VGA:VGAdriver|RGV[0]                                                                                ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 20    ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |main|VGA:VGAdriver|hcount[0] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |main|VGA:VGAdriver|vcount[9] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: VGA:VGAdriver ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; hsyncro        ; 96    ; Signed Integer                    ;
+; hbporch        ; 48    ; Signed Integer                    ;
+; hactive        ; 640   ; Signed Integer                    ;
+; hfporch        ; 16    ; Signed Integer                    ;
+; htotal         ; 800   ; Signed Integer                    ;
+; vsyncro        ; 2     ; Signed Integer                    ;
+; vbporch        ; 31    ; Signed Integer                    ;
+; vactive        ; 480   ; Signed Integer                    ;
+; vfporch        ; 11    ; Signed Integer                    ;
+; vtotal         ; 524   ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 112                         ;
+; cycloneiii_ff         ; 20                          ;
+;     ENA SCLR          ; 10                          ;
+;     SCLR              ; 10                          ;
+; cycloneiii_lcell_comb ; 37                          ;
+;     arith             ; 18                          ;
+;         2 data inputs ; 18                          ;
+;     normal            ; 19                          ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 10                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.98                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:06     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Thu Jun 02 20:37:12 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EE705project -c EE705project
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file vga.v
+    Info (12023): Found entity 1: VGA File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sine.v
+    Info (12023): Found entity 1: sine File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cosine.v
+    Info (12023): Found entity 1: cosine File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file main.v
+    Info (12023): Found entity 1: main File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file test_main.v
+    Info (12023): Found entity 1: test_main File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/test_main.v Line: 4
+Warning (10236): Verilog HDL Implicit Net warning at main.v(446): created implicit net for "pixel_color" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 446
+Warning (10236): Verilog HDL Implicit Net warning at main.v(447): created implicit net for "start_rd" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 447
+Info (12127): Elaborating entity "main" for the top level hierarchy
+Warning (10855): Verilog HDL warning at main.v(46): initial value for variable vertices should be constant File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 46
+Warning (10855): Verilog HDL warning at main.v(46): initial value for variable faces should be constant File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 46
+Warning (10230): Verilog HDL assignment warning at main.v(85): truncated value with size 48 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 85
+Warning (10230): Verilog HDL assignment warning at main.v(95): truncated value with size 48 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 95
+Warning (10230): Verilog HDL assignment warning at main.v(285): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 285
+Warning (10030): Net "faces[1][2][2..0]" at main.v(30) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 30
+Warning (10030): Net "faces[1][1][2..0]" at main.v(30) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 30
+Warning (10030): Net "faces[1][0][2..0]" at main.v(30) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 30
+Warning (10030): Net "faces[0][2][2..0]" at main.v(30) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 30
+Warning (10030): Net "faces[0][1][2..0]" at main.v(30) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 30
+Warning (10030): Net "faces[0][0][2..0]" at main.v(30) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 30
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "vertices" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "faces" into its bus
+Info (12128): Elaborating entity "sine" for hierarchy "sine:s1" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 65
+Warning (10230): Verilog HDL assignment warning at sine.v(24): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 24
+Warning (10230): Verilog HDL assignment warning at sine.v(28): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 28
+Warning (10240): Verilog HDL Always Construct warning at sine.v(35): inferring latch(es) for variable "addr_id", which holds its previous value in one or more paths through the always construct File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 35
+Warning (10230): Verilog HDL assignment warning at sine.v(68): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 68
+Warning (10240): Verilog HDL Always Construct warning at sine.v(62): inferring latch(es) for variable "val", which holds its previous value in one or more paths through the always construct File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 62
+Warning (10030): Net "inp_sin_block.data_a" at sine.v(7) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 7
+Warning (10030): Net "inp_sin_block.waddr_a" at sine.v(7) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 7
+Warning (10030): Net "inp_sin_block.we_a" at sine.v(7) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 7
+Info (10041): Inferred latch for "val[0]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[1]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[2]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[3]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[4]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[5]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[6]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[7]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[8]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[9]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[10]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[11]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[12]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[13]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[14]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "val[15]" at sine.v(67) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 67
+Info (10041): Inferred latch for "addr_id[0]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[1]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[2]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[3]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[4]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[5]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[6]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[7]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[8]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[9]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[10]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[11]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[12]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[13]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[14]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[15]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[16]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[17]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[18]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[19]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[20]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[21]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[22]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[23]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[24]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[25]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[26]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[27]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[28]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[29]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[30]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (10041): Inferred latch for "addr_id[31]" at sine.v(43) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 43
+Info (12128): Elaborating entity "cosine" for hierarchy "cosine:c1" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 75
+Warning (10230): Verilog HDL assignment warning at cosine.v(22): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 22
+Warning (10230): Verilog HDL assignment warning at cosine.v(26): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 26
+Warning (10240): Verilog HDL Always Construct warning at cosine.v(34): inferring latch(es) for variable "addr_id", which holds its previous value in one or more paths through the always construct File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 34
+Warning (10230): Verilog HDL assignment warning at cosine.v(65): truncated value with size 32 to match size of target (16) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 65
+Warning (10240): Verilog HDL Always Construct warning at cosine.v(59): inferring latch(es) for variable "val", which holds its previous value in one or more paths through the always construct File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 59
+Warning (10030): Net "inp_sin_block.data_a" at cosine.v(7) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 7
+Warning (10030): Net "inp_sin_block.waddr_a" at cosine.v(7) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 7
+Warning (10030): Net "inp_sin_block.we_a" at cosine.v(7) has no driver or initial value, using a default initial value '0' File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 7
+Info (10041): Inferred latch for "val[0]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[1]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[2]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[3]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[4]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[5]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[6]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[7]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[8]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[9]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[10]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[11]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[12]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[13]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[14]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "val[15]" at cosine.v(64) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 64
+Info (10041): Inferred latch for "addr_id[0]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[1]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[2]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[3]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[4]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[5]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[6]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[7]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[8]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[9]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[10]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[11]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[12]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[13]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[14]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[15]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[16]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[17]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[18]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[19]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[20]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[21]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[22]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[23]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[24]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[25]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[26]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[27]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[28]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[29]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[30]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (10041): Inferred latch for "addr_id[31]" at cosine.v(41) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 41
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:VGAdriver" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 448
+Warning (10230): Verilog HDL assignment warning at VGA.v(29): truncated value with size 32 to match size of target (10) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v Line: 29
+Warning (10230): Verilog HDL assignment warning at VGA.v(35): truncated value with size 32 to match size of target (10) File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/VGA.v Line: 35
+Info (276014): Found 6 instances of uninferred RAM logic
+    Info (276004): RAM logic "sine:s2|inp_sin_block" is uninferred due to inappropriate RAM size File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 7
+    Info (276004): RAM logic "cosine:c2|inp_sin_block" is uninferred due to inappropriate RAM size File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 7
+    Info (276004): RAM logic "sine:s3|inp_sin_block" is uninferred due to inappropriate RAM size File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 7
+    Info (276004): RAM logic "cosine:c3|inp_sin_block" is uninferred due to inappropriate RAM size File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 7
+    Info (276004): RAM logic "sine:s1|inp_sin_block" is uninferred due to inappropriate RAM size File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/sine.v Line: 7
+    Info (276004): RAM logic "cosine:c1|inp_sin_block" is uninferred due to inappropriate RAM size File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/cosine.v Line: 7
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "red[0]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 17
+    Warning (13410): Pin "red[1]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 17
+    Warning (13410): Pin "red[2]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 17
+    Warning (13410): Pin "green[0]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 18
+    Warning (13410): Pin "green[1]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 18
+    Warning (13410): Pin "green[2]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 18
+    Warning (13410): Pin "blue[0]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 19
+    Warning (13410): Pin "blue[1]" is stuck at GND File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 19
+    Warning (13410): Pin "VGA_sync_n" is stuck at VCC File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 22
+    Warning (13410): Pin "VGA_blank_n" is stuck at VCC File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 24
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 429 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 97 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clr_screen" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 7
+    Warning (15610): No output dependent on input pin "dx_coordinate[15]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[14]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[13]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[12]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[11]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[10]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[9]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[8]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[7]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[6]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[5]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[4]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[3]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[2]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[1]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dx_coordinate[0]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 8
+    Warning (15610): No output dependent on input pin "dy_coordinate[15]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[14]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[13]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[12]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[11]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[10]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[9]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[8]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[7]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[6]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[5]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[4]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[3]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[2]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[1]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dy_coordinate[0]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 9
+    Warning (15610): No output dependent on input pin "dz_coordinate[15]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[14]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[13]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[12]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[11]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[10]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[9]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[8]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[7]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[6]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[5]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[4]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[3]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[2]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[1]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "dz_coordinate[0]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 10
+    Warning (15610): No output dependent on input pin "beta[15]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[14]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[13]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[12]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[11]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[10]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[9]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[8]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[7]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[6]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[5]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[4]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[3]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[2]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[1]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "beta[0]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 13
+    Warning (15610): No output dependent on input pin "gamma[15]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[14]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[13]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[12]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[11]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[10]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[9]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[8]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[7]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[6]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[5]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[4]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[3]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[2]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[1]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "gamma[0]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 14
+    Warning (15610): No output dependent on input pin "alpha[15]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[14]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[13]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[12]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[11]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[10]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[9]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[8]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[7]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[6]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[5]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[4]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[3]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[2]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[1]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+    Warning (15610): No output dependent on input pin "alpha[0]" File: C:/Data/EE705 VLSI Design Lab/project/EE705/EE705/Verilog Implementation/main.v Line: 12
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 99 input pins
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 33 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 141 warnings
+    Info: Peak virtual memory: 4799 megabytes
+    Info: Processing ended: Thu Jun 02 20:37:30 2022
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:29
+
+
